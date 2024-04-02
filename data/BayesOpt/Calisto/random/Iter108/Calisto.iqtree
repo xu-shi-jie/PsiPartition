@@ -1,0 +1,327 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/BayesOpt/Calisto.parts
+Input file name: data/BayesOpt/Calisto.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 654606
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 90 taxa with 17 partitions and 5297 total sites (0.0100686% missing data)
+
+  ID  Name    Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1   DNA	90	2413	732	75	2331	2331
+   2  part2   DNA	90	686	191	111	575	575
+   3  part3   DNA	90	174	112	100	74	74
+   4  part4   DNA	90	140	85	74	66	66
+   5  part5   DNA	90	78	78	78	0	0
+   6  part6   DNA	90	271	80	77	194	194
+   7  part7   DNA	90	129	128	129	0	0
+   8  part8   DNA	90	75	75	75	0	0
+   9  part9   DNA	90	97	97	97	0	0
+  10  part10  DNA	90	83	83	80	0	0
+  11  part11  DNA	90	119	118	83	0	0
+  12  part12  DNA	90	214	202	93	0	0
+  13  part13  DNA	90	246	244	125	0	0
+  14  part14  DNA	90	278	266	137	0	0
+  15  part15  DNA	90	243	230	119	0	0
+  16  part16  DNA	90	50	49	16	0	0
+  17  part17  DNA	42	1	1	0	0	0
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM2+F+I:part1,TIM2+F+I:part2,TVM+F+I+G4:part3,TVM+F+I+G4:part4,TVM+F+ASC+R2:part5,GTR+F+I+G4:part6,TIM2+F+ASC+G4:part7,TPM2u+F+ASC+R2:part8,TIM2+F+ASC+R2:part9,TIM2+F+ASC+R2:part10,K3Pu+F+ASC+R2:part11,TIM3+F+ASC+R2:part12,TPM2u+F+ASC+R3:part13,GTR+F+ASC+G4:part14,GTR+F+ASC+G4:part15,TIM3+F+ASC+G4:part16,TPM3u+F+R10:part17
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  TPM2+F+I         -5314.1055  10642.2111 + 0.0000  10642.2577 + 0.0000  10682.7315 + 0.0000
+   2  TIM2+F+I         -3413.1405   6842.2809 + 0.0000   6842.4936 + 0.0000   6878.5280 + 0.0000
+   3  TVM+F+I+G4       -2286.1696   4592.3392 + 0.0000   4593.6889 + 0.0000   4623.9297 + 0.0000
+   4  TVM+F+I+G4       -1612.2322   3244.4644 + 0.0000   3246.1699 + 0.0000   3273.8809 + 0.0000
+   5  TVM+F+ASC+R2     -1435.5707   2891.1414 + 0.0000   2894.4250 + 0.0000   2914.7085 + 0.0000
+   6  GTR+F+I+G4       -1888.8182   3799.6364 + 0.0000   3800.6557 + 0.0000   3839.2597 + 0.0000
+   7  TIM2+F+ASC+G4    -2737.6414   5491.2827 + 0.0000   5492.4827 + 0.0000   5514.1612 + 0.0000
+   8  TPM2u+F+ASC+R2   -1355.0098   2726.0197 + 0.0000   2728.2015 + 0.0000   2744.5596 + 0.0000
+   9  TIM2+F+ASC+R2    -1668.9951   3355.9902 + 0.0000   3358.0591 + 0.0000   3379.1626 + 0.0000
+  10  TIM2+F+ASC+R2    -1608.0897   3234.1793 + 0.0000   3236.6451 + 0.0000   3255.9489 + 0.0000
+  11  K3Pu+F+ASC+R2    -1717.7415   3451.4831 + 0.0000   3452.7921 + 0.0000   3473.7160 + 0.0000
+  12  TIM3+F+ASC+R2    -2596.4783   5210.9565 + 0.0000   5211.8389 + 0.0000   5241.2503 + 0.0000
+  13  TPM2u+F+ASC+R3   -3672.3140   7364.6281 + 0.0000   7365.5642 + 0.0000   7399.6814 + 0.0000
+  14  GTR+F+ASC+G4     -4268.3742   8556.7485 + 0.0000   8557.5724 + 0.0000   8593.0247 + 0.0000
+  15  GTR+F+ASC+G4     -3815.2659   7650.5318 + 0.0000   7651.4801 + 0.0000   7685.4624 + 0.0000
+  16  TIM3+F+ASC+G4     -636.7629   1289.5259 + 0.0000   1293.0381 + 0.0000   1304.8220 + 0.0000
+  17  TPM3u+F+R10         -8.6564     65.3129 + 0.0000   1265.3129 + 0.0000     17.3129 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  TPM2+F+I       0.1819  TPM2{9.32217,100}+F{0.274432,0.202824,0.255454,0.26729}+I{0.963235}
+   2  TIM2+F+I       0.6751  TIM2{5.32177,44.7648,67.9429}+F{0.282429,0.193668,0.257592,0.266311}+I{0.838183}
+   3  TVM+F+I+G4     2.7017  TVM{4.42025,100,25.906,8.82245}+F{0.194593,0.206934,0.137597,0.460876}+I{0.405093}+G4{2.29699}
+   4  TVM+F+I+G4     1.8879  TVM{0.19838,11.8512,2.70773,0.341484}+F{0.23413,0.236193,0.164646,0.365031}+I{0.460409}+G4{3.72678}
+   5  TVM+F+ASC+R2   3.4118  TVM{18.4979,100,45.8539,12.3033}+F{0.170629,0.2116,0.103849,0.513923}+ASC+R2{0.824147,0.690872,0.175853,2.44875}
+   6  GTR+F+I+G4     0.8723  GTR{1.08197,6.47288,5.09235,0.729136,10.9201}+F{0.245301,0.221952,0.208246,0.324501}+I{0.702587}+G4{3.03078}
+   7  TIM2+F+ASC+G4  4.1096  TIM2{2.86547,29.836,15.2012}+F{0.200682,0.199753,0.101019,0.498546}+ASC+G4{1.38319}
+   8  TPM2u+F+ASC+R2 3.3726  TPM2u{2.9725,9.8395}+F{0.25266,0.185652,0.17272,0.388968}+ASC+R2{0.846149,0.582975,0.153851,3.29356}
+   9  TIM2+F+ASC+R2  2.4926  TIM2{1.8639,3.87468,6.6963}+F{0.35743,0.213465,0.150289,0.278817}+ASC+R2{0.79985,0.625696,0.20015,2.49581}
+  10  TIM2+F+ASC+R2  3.3492  TIM2{1.90733,6.75699,4.33944}+F{0.283826,0.30752,0.132626,0.276027}+ASC+R2{0.770006,0.550586,0.229994,2.50461}
+  11  K3Pu+F+ASC+R2  1.9394  K3Pu{2.52995,0.520236}+F{0.324285,0.210843,0.119045,0.345827}+ASC+R2{0.773883,0.433706,0.226117,2.93814}
+  12  TIM3+F+ASC+R2  1.4037  TIM3{5.12485,3.19335,8.42713}+F{0.287728,0.124678,0.157941,0.429653}+ASC+R2{0.868277,0.495023,0.131723,4.32865}
+  13  TPM2u+F+ASC+R3 1.3524  TPM2u{2.55427,5.41697}+F{0.229276,0.195731,0.214081,0.360912}+ASC+R3{0.721217,0.215758,0.240797,2.47875,0.0379854,6.51605}
+  14  GTR+F+ASC+G4   2.0203  GTR{0.149635,0.994292,0.38716,0.545452,1.73048}+F{0.450253,0.21086,0.108027,0.230859}+ASC+G4{0.969261}
+  15  GTR+F+ASC+G4   1.3604  GTR{0.0636068,0.592102,0.64311,0.354029,1.32136}+F{0.411926,0.32948,0.121493,0.137101}+ASC+G4{0.408145}
+  16  TIM3+F+ASC+G4  1.8954  TIM3{0.0092506,0.110793,0.801287}+F{0.346261,0.473278,0.134468,0.0459918}+ASC+G4{0.900173}
+  17  TPM3u+F+R10    4.2905  TPM3u{0.0278849,0.0255421}+F{0.00163655,0.947783,0.0252902,0.0252902}+R10{0.0534653,0.99977,0.183409,0.99977,0.116303,1.00007,0.00136464,1.00007,0.0113498,1.00007,0.029294,1.00007,0.172481,1.00007,0.197557,1.00007,0.152,1.00007,0.0827752,1.00007}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -39951.7920 (s.e. 729.8933)
+Unconstrained log-likelihood (without tree): -27238.4329
+Number of free parameters (#branches + #model parameters): 345
+Akaike information criterion (AIC) score: 80593.5840
+Corrected Akaike information criterion (AICc) score: 80641.8045
+Bayesian information criterion (BIC) score: 82861.9231
+
+Total tree length (sum of branch lengths): 1.8829
+Sum of internal branch lengths: 0.7950 (42.2223% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0002) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'EW1_1_Pararge_aegeria' is drawn at root
+
++----------------------------EW1_1_Pararge_aegeria
+|
+|              +---------------------------------------------CP01_33_Euptychia_spn2
+|           +--|
+|           |  |                                           +--CP19_01_Calisto_arcas
+|           |  |                             +-------------|
+|           |  |                             |             |  +--CP20_04_Calisto_arcas
+|           |  |                             |             +**|
+|           |  |                             |                +--NW149_16_Calisto_arcas
+|           |  |                          +--|
+|           |  |                          |  |       +----------RN02_16_Calisto_clydoniata
+|           |  |                          |  +-------|
+|           |  |                          |          |             +--DR017_Calisto_galii
+|           |  |                          |          |          +--|
+|           |  |                          |          |          |  +----RN06_01_Calisto_clenchi
+|           |  |                          |          |       +--|
+|           |  |                          |          |       |  +--RN02_17_Calisto_galii
+|           |  |                          |          +-------|
+|           |  |                          |                  +--RN04_01_Calisto_chrysaoros
+|           |  |                       +--|
+|           |  |                       |  |               +--PM07_06_Calisto_bradleyi
+|           |  |                       |  |            +--|
+|           |  |                       |  |            |  |      +--PM07_24_Calisto_bradleyi
+|           |  |                       |  |            |  |   +--|
+|           |  |                       |  |            |  |   |  +--PM07_26_Calisto_bradleyi
+|           |  |                       |  |            |  +---|
+|           |  |                       |  |            |      +**PM07_25_Calisto_bradleyi
+|           |  |                       |  |         +--|
+|           |  |                       |  |         |  |        +--PM07_07_Calisto_herophile
+|           |  |                       |  |         |  |     +--|
+|           |  |                       |  |         |  |     |  |  +--PM07_22_Calisto_herophile
+|           |  |                       |  |         |  |     |  +--|
+|           |  |                       |  |         |  |     |     +--PM20_06_Calisto_herophile
+|           |  |                       |  |         |  |  +--|
+|           |  |                       |  |         |  |  |  |  +--PM07_12_Calisto_herophile
+|           |  |                       |  |         |  |  |  +--|
+|           |  |                       |  |         |  |  |     +--PM15_06_Calisto_herophile
+|           |  |                       |  |         |  +--|
+|           |  |                       |  |         |     |   +--RN02_25_Calisto_herophile
+|           |  |                       |  |         |     +---|
+|           |  |                       |  |         |         +--RN02_26_Calisto_herophile
+|           |  |                       |  |      +--|
+|           |  |                       |  |      |  |           +--PM07_03_Calisto_brochei
+|           |  |                       |  |      |  |        +--|
+|           |  |                       |  |      |  |        |  +--PM20_04_Calisto_brochei
+|           |  |                       |  |      |  |     +--|
+|           |  |                       |  |      |  |     |  +--PM20_05_Calisto_brochei
+|           |  |                       |  |      |  |  +--|
+|           |  |                       |  |      |  |  |  |     +**PM07_08_Calisto_muripetens
+|           |  |                       |  |      |  |  |  |  +--|
+|           |  |                       |  |      |  |  |  |  |  |  +**RN01_04_Calisto_muripetens
+|           |  |                       |  |      |  |  |  |  |  +--|
+|           |  |                       |  |      |  |  |  |  |     +--RN01_05_Calisto_muripetens
+|           |  |                       |  |      |  |  |  +--|
+|           |  |                       |  |      |  |  |     |     +**PM07_04_Calisto_occulta
+|           |  |                       |  |      |  |  |     |  +--|
+|           |  |                       |  |      |  |  |     |  |  +--PM07_10_Calisto_occulta
+|           |  |                       |  |      |  |  |     +--|
+|           |  |                       |  |      |  |  |        |     +**PM07_18_Calisto_occulta
+|           |  |                       |  |      |  |  |        |  +--|
+|           |  |                       |  |      |  |  |        |  |  +--PM07_19_Calisto_occulta
+|           |  |                       |  |      |  |  |        +--|
+|           |  |                       |  |      |  |  |           +**PM07_23_Calisto_occulta
+|           |  |                       |  |      |  +--|
+|           |  |                       |  |      |     |           +--PM07_15_Calisto_bruneri
+|           |  |                       |  |      |     |        +--|
+|           |  |                       |  |      |     |        |  +--PM07_21_Calisto_bruneri
+|           |  |                       |  |      |     |  +-----|
+|           |  |                       |  |      |     |  |     |  +**PM07_16_Calisto_bruneri
+|           |  |                       |  |      |     |  |     +--|
+|           |  |                       |  |      |     |  |        +--PM07_17_Calisto_bruneri
+|           |  |                       |  |      |     +--|
+|           |  |                       |  |      |        |       +--RN02_22_Calisto_sibylla
+|           |  |                       |  |      |        +-------|
+|           |  |                       |  |      |                +--RN02_23_Calisto_sibylla
+|           |  |                       |  |  +---|
+|           |  |                       |  |  |   |          +--PM07_01_Calisto_israeli
+|           |  |                       |  |  |   |  +-------|
+|           |  |                       |  |  |   |  |       +--PM07_02_Calisto_israeli
+|           |  |                       |  |  |   +--|
+|           |  |                       |  |  |      |          +--PM07_05_Calisto_smintheus
+|           |  |                       |  |  |      |       +--|
+|           |  |                       |  |  |      |       |  |  +--PM07_13_Calisto_smintheus
+|           |  |                       |  |  |      |       |  +--|
+|           |  |                       |  |  |      |       |     +--PM07_14_Calisto_smintheus
+|           |  |                       |  |  |      +-------|
+|           |  |                       |  |  |              +--PM07_09_Calisto_smintheus
+|           |  |                       |  +--|
+|           |  |                       |     |            +---CP19_06_Calisto_eleleus
+|           |  |                       |     +------------|
+|           |  |                       |                  +--RN03_01_Calisto_eleleus
+|           |  |                    +--|
+|           |  |                    |  |                +--------RN03_02_Calisto_batesi
+|           |  |                    |  |             +--|
+|           |  |                    |  |             |  |        +--CP20_11_Calisto_hysius
+|           |  |                    |  |             |  +--------|
+|           |  |                    |  |             |           +--RN04_02_Calisto_hysius
+|           |  |                    |  |     +-------|
+|           |  |                    |  |     |       +----------RN02_18_Calisto_loxias
+|           |  |                    |  |  +--|
+|           |  |                    |  |  |  |                     +--CP19_08_Calisto_grannus
+|           |  |                    |  |  |  |                  +--|
+|           |  |                    |  |  |  |                  |  +--NW149_15_Calisto_grannus
+|           |  |                    |  |  |  |               +--|
+|           |  |                    |  |  |  |               |  +--CP19_11_Calisto_sommeri
+|           |  |                    |  |  |  |      +--------|
+|           |  |                    |  |  |  |      |        |  +--RN06_02_Calisto_grannus
+|           |  |                    |  |  |  |      |        +--|
+|           |  |                    |  |  |  |      |           +--RN06_03_Calisto_grannus
+|           |  |                    |  |  |  +------|
+|           |  |                    |  |  |         |                  +--DR005_Calisto_obscura
+|           |  |                    |  |  |         |               +--|
+|           |  |                    |  |  |         |               |  +--NW149_12_Calisto_obscura
+|           |  |                    |  |  |         |            +--|
+|           |  |                    |  |  |         |            |  +--NW150_1_Calisto_obscura
+|           |  |                    |  |  |         |         +--|
+|           |  |                    |  |  |         |         |  +--NW150_2_Calisto_obscura
+|           |  |                    |  |  |         |      +--|
+|           |  |                    |  |  |         |      |  +--DR080_Calisto_obscura
+|           |  |                    |  |  |         +------|
+|           |  |                    |  |  |                +--RN06_04_Calisto_obscura
+|           |  |                    |  +--|
+|           |  |                    |     |               +--DR016_Calisto_confusa
+|           |  |                    |     |           +---|
+|           |  |                    |     |           |   +--DR032_Calisto_confusa
+|           |  |                    |     +-----------|
+|           |  |                    |                 +-----DR019_Calisto_debarriera
+|           |  |                 +--|
+|           |  |                 |  |                  +--CP19_05_Calisto_crypta
+|           |  |                 |  |               +--|
+|           |  |                 |  |               |  |  +--CP20_01_Calisto_crypta
+|           |  |                 |  |               |  +--|
+|           |  |                 |  |               |     |  +**CP20_02_Calisto_crypta
+|           |  |                 |  |               |     +--|
+|           |  |                 |  |               |        |  +**CP20_03_Calisto_crypta
+|           |  |                 |  |               |        +--|
+|           |  |                 |  |               |           +--NW149_17_Calisto_crypta
+|           |  |                 |  |            +--|
+|           |  |                 |  |            |  |    +--DR075_Calisto_lyceius
+|           |  |                 |  |            |  +----|
+|           |  |                 |  |            |       +--DR081_Calisto_lyceius
+|           |  |                 |  |         +--|
+|           |  |                 |  |         |  |    +--DR059_Calisto_schwartzi
+|           |  |                 |  |         |  +----|
+|           |  |                 |  |         |       +--DR063_Calisto_schwartzi
+|           |  |                 |  |  +------|
+|           |  |                 |  |  |      |      +--CP20_07_Calisto_tasajera
+|           |  |                 |  |  |      +------|
+|           |  |                 |  |  |             +--CP20_08_Calisto_tasajera
+|           |  |                 |  +--|
+|           |  |                 |     |                +-----DR003_Calisto_pulchella
+|           |  |                 |     |     +----------|
+|           |  |                 |     |     |          +--DR015_Calisto_pulchella
+|           |  |                 |     |  +--|
+|           |  |                 |     |  |  +--------CAL_Sat102_Calisto_raburni
+|           |  |                 |     +--|
+|           |  |                 |        +--------RN02_12_Calisto_zangis
+|           |  |             +---|
+|           |  |             |   +--------------RN02_14_Calisto_archebates
+|           |  +-------------|
+|           |                |                    +--CP19_10_Calisto_nubila
+|           |                +--------------------|
+|           |                                     +--PR_1_3_Calisto_nubila
+|        +--|
+|        |  |    +-------------------------------NW108_3_Taygetis_virgilia
+|        |  +----|
+|        |       +----------------------------CP04_62_Eretris_
+|     +--|
+|     |  |  +----------------------EW24_7_Erebia_oeme
+|     |  +--|
+|     |     +------------------EW4_5_Maniola_jurtina
+|  +--|
+|  |  +-----------------------CP_B01_Brintesia_circe
++--|
+|  |  +-------------------------CP03_63_Manerebia_cyclopina
+|  +--|
+|     +--------------------CP07_89_Steremnia_umbracina
+|
++------------------CP03_70_Pronophila_thelebe
+
+Tree in newick format:
+
+(EW1_1_Pararge_aegeria:0.0738198823,(((((CP01_33_Euptychia_spn2:0.1148883186,(((((((CP19_01_Calisto_arcas:0.0020509455,(CP20_04_Calisto_arcas:0.0015270566,NW149_16_Calisto_arcas:0.0011437078):0.0000881096):0.0355386440,(RN02_16_Calisto_clydoniata:0.0282247589,(((DR017_Calisto_galii:0.0055328554,RN06_01_Calisto_clenchi:0.0141888886):0.0034327640,RN02_17_Calisto_galii:0.0052758837):0.0017636077,RN04_01_Calisto_chrysaoros:0.0068675933):0.0206538354):0.0212490282):0.0032779718,(((((PM07_06_Calisto_bradleyi:0.0086403605,((PM07_24_Calisto_bradleyi:0.0002709218,PM07_26_Calisto_bradleyi:0.0020003125):0.0010717538,PM07_25_Calisto_bradleyi:0.0000027834):0.0102220705):0.0081388497,(((PM07_07_Calisto_herophile:0.0034639517,(PM07_22_Calisto_herophile:0.0012191064,PM20_06_Calisto_herophile:0.0025070329):0.0005539867):0.0005497159,(PM07_12_Calisto_herophile:0.0024228977,PM15_06_Calisto_herophile:0.0030603860):0.0007299748):0.0031139799,(RN02_25_Calisto_herophile:0.0017942181,RN02_26_Calisto_herophile:0.0023271329):0.0122414840):0.0082462827):0.0032256036,((((PM07_03_Calisto_brochei:0.0008458759,PM20_04_Calisto_brochei:0.0008089468):0.0009725976,PM20_05_Calisto_brochei:0.0021317092):0.0064633053,((PM07_08_Calisto_muripetens:0.0000027834,(RN01_04_Calisto_muripetens:0.0000029921,RN01_05_Calisto_muripetens:0.0004338176):0.0029459817):0.0091700085,((PM07_04_Calisto_occulta:0.0000029931,PM07_10_Calisto_occulta:0.0021712168):0.0018170040,((PM07_18_Calisto_occulta:0.0000022559,PM07_19_Calisto_occulta:0.0005958274):0.0004351496,PM07_23_Calisto_occulta:0.0000028865):0.0025205953):0.0031986484):0.0022099037):0.0057793918,(((PM07_15_Calisto_bruneri:0.0014485455,PM07_21_Calisto_bruneri:0.0011694370):0.0020821516,(PM07_16_Calisto_bruneri:0.0000025247,PM07_17_Calisto_bruneri:0.0003379494):0.0031350446):0.0167609573,(RN02_22_Calisto_sibylla:0.0002760607,RN02_23_Calisto_sibylla:0.0029354418):0.0200733709):0.0019371303):0.0011083068):0.0063504195,((PM07_01_Calisto_israeli:0.0005407655,PM07_02_Calisto_israeli:0.0021442370):0.0215205613,((PM07_05_Calisto_smintheus:0.0010169458,(PM07_13_Calisto_smintheus:0.0002951053,PM07_14_Calisto_smintheus:0.0003429069):0.0003442389):0.0008883926,PM07_09_Calisto_smintheus:0.0010341144):0.0208590222):0.0041151493):0.0121385279,(CP19_06_Calisto_eleleus:0.0121858218,RN03_01_Calisto_eleleus:0.0067160329):0.0347261981):0.0014151558):0.0043676981,((((RN03_02_Calisto_batesi:0.0226157302,(CP20_11_Calisto_hysius:0.0018377760,RN04_02_Calisto_hysius:0.0061285179):0.0233663706):0.0038195530,RN02_18_Calisto_loxias:0.0280572738):0.0217310659,((((CP19_08_Calisto_grannus:0.0038697626,NW149_15_Calisto_grannus:0.0035034062):0.0014164496,CP19_11_Calisto_sommeri:0.0023500646):0.0011800469,(RN06_02_Calisto_grannus:0.0024604957,RN06_03_Calisto_grannus:0.0017876318):0.0034998016):0.0232382904,(((((DR005_Calisto_obscura:0.0046591018,NW149_12_Calisto_obscura:0.0003800252):0.0030271228,NW150_1_Calisto_obscura:0.0025542176):0.0023305932,NW150_2_Calisto_obscura:0.0058062211):0.0004807322,DR080_Calisto_obscura:0.0073041890):0.0018673634,RN06_04_Calisto_obscura:0.0059967747):0.0193379283):0.0180220603):0.0085375457,((DR016_Calisto_confusa:0.0062955497,DR032_Calisto_confusa:0.0041200274):0.0108698132,DR019_Calisto_debarriera:0.0167164216):0.0299392953):0.0043593324):0.0019950302,(((((CP19_05_Calisto_crypta:0.0036150061,(CP20_01_Calisto_crypta:0.0090675346,(CP20_02_Calisto_crypta:0.0000022602,(CP20_03_Calisto_crypta:0.0000027834,NW149_17_Calisto_crypta:0.0032246298):0.0012009848):0.0013480470):0.0007126890):0.0098608712,(DR075_Calisto_lyceius:0.0018755036,DR081_Calisto_lyceius:0.0034708520):0.0127799463):0.0097378008,(DR059_Calisto_schwartzi:0.0090892546,DR063_Calisto_schwartzi:0.0043800820):0.0134958329):0.0048365609,(CP20_07_Calisto_tasajera:0.0022649661,CP20_08_Calisto_tasajera:0.0044445820):0.0188785194):0.0190581592,(((DR003_Calisto_pulchella:0.0157102353,DR015_Calisto_pulchella:0.0074418356):0.0282829476,CAL_Sat102_Calisto_raburni:0.0227703198):0.0016231672,RN02_12_Calisto_zangis:0.0240048432):0.0095457234):0.0055585388):0.0037383935,RN02_14_Calisto_archebates:0.0375525444):0.0108724693,(CP19_10_Calisto_nubila:0.0020885793,PR_1_3_Calisto_nubila:0.0037467046):0.0521416850):0.0369307187):0.0072525867,(NW108_3_Taygetis_virgilia:0.0805209391,CP04_62_Eretris_:0.0741754551):0.0142214888):0.0065938455,(EW24_7_Erebia_oeme:0.0575451706,EW4_5_Maniola_jurtina:0.0477676782):0.0062927584):0.0022028626,CP_B01_Brintesia_circe:0.0603643004):0.0040838192,(CP03_63_Manerebia_cyclopina:0.0658723178,CP07_89_Steremnia_umbracina:0.0522832834):0.0069340217):0.0063512527,CP03_70_Pronophila_thelebe:0.0494715345);
+
+TIME STAMP
+----------
+
+Date and time: Wed Jan 31 04:22:56 2024
+Total CPU time used: 305.734 seconds (0h:5m:5s)
+Total wall-clock time used: 40.0602 seconds (0h:0m:40s)
+

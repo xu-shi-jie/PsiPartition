@@ -1,0 +1,184 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/DNA/empirical/mPartition/par.Choreutidae.phy
+Input file name: data/DNA/empirical/Choreutidae.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 820548
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 41 taxa with 3 partitions and 6293 total sites (0% missing data)
+
+  ID  Name               Type	Seq	Site	Unique	Infor	Invar	Const
+   1  Choreutidae.phyP2  DNA	41	2414	1327	867	1254	1254
+   2  Choreutidae.phyP3  DNA	41	1679	583	373	1282	1282
+   3  Choreutidae.phyP1  DNA	41	2200	1122	937	1257	1257
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R2:Choreutidae.phyP2,TIM2e+I:Choreutidae.phyP3,GTR+F+R3:Choreutidae.phyP1
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  GTR+F+R2        -24063.2394  48148.4788 + 0.0000  48148.5887 + 0.0000  48212.1582 + 0.0000
+   2  TIM2e+I         -11448.2244  22906.4488 + 0.0000  22906.4847 + 0.0000  22933.5786 + 0.0000
+   3  GTR+F+R3        -23245.6503  46517.3006 + 0.0000  46517.4672 + 0.0000  46591.3514 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+R2       0.9733  GTR{4.77502,56.1475,36.6623,3.98185,99.5997}+F{0.321183,0.199706,0.191988,0.287122}+R2{0.726075,0.123621,0.273925,3.32296}
+   2  TIM2e+I        0.4865  TIM2e{1.30941,0.64496,0.814937}+FQ+I{0.762043}
+   3  GTR+F+R3       1.4212  GTR{0.760665,43.6632,27.8462,4.34344,100}+F{0.273295,0.203842,0.190042,0.33282}+R3{0.551068,0.00203216,0.335166,0.912762,0.113767,6.09101}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -58749.1248 (s.e. 885.1862)
+Unconstrained log-likelihood (without tree): -38161.6736
+Number of free parameters (#branches + #model parameters): 107
+Akaike information criterion (AIC) score: 117712.2497
+Corrected Akaike information criterion (AICc) score: 117715.9865
+Bayesian information criterion (BIC) score: 118434.1994
+
+Total tree length (sum of branch lengths): 3.5280
+Sum of internal branch lengths: 1.2137 (34.4029% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ANIC002281_Homadaula_sp.' is drawn at root
+
++------ANIC002281_Homadaula_sp.
+|
+|             +------------------------ANIC002694_Imma_loxoscia
++-------------|
+|             |                           +--An_a_CA_2_Anthophila_alpinella
+|             |               +-----------|
+|             |               |           +--An_f_BE_2_Anthophila_fabriciana
+|             |            +--|
+|             |            |  |             +----MM05852_Prochoreutis_myllerana
+|             |            |  |     +-------|
+|             |            |  |     |       +----PrinCT1HLC697_Prochoreutis_inflatella
+|             |            |  |  +--|
+|             |            |  |  |  |     +------Te_ge_WA_1_Tebenna_gemmalis
+|             |            |  |  |  +-----|
+|             |            |  |  |        +--------Te_gn_ST_1_Tebenna_gnaphaliella
+|             |            |  +--|
+|             |            |     +-----------MM11261_Asterivora_homotypa
+|             |     +------|
+|             |     |      |              +-----Ch_amm_TW_1_Choreutis_amethystodes
+|             |     |      |     +--------|
+|             |     |      |     |        |        +----Ch_ba_TW_2_Choreutis_basalis
+|             |     |      |     |        |     +--|
+|             |     |      |     |        |     |  +-----Ch_xa_TW_1_Choreutis_xantho
+|             |     |      |     |        |  +--|
+|             |     |      |     |        |  |  |  +----ChnemHR1_Choreutis_nemorana
+|             |     |      |     |        |  |  +--|
+|             |     |      |     |        |  |     +-----Chp_Choreutis_pariana
+|             |     |      |     |        +--|
+|             |     |      |     |           |  +----Ch_hy_TW_2_Choreutis_hyligenes
+|             |     |      |     |           +--|
+|             |     |      |     |              +--Ch_oph_TW_2_Choreutis_ophiosema
+|             |     |      |  +--|
+|             |     |      |  |  |             +--MM07573_Saptha_libonota
+|             |     |      |  |  |     +-------|
+|             |     |      |  |  |     |       +--Sa_ber_TW_1_Saptha_beryllitis
+|             |     |      |  |  +-----|
+|             |     |      |  |        +----------Sa_div_TW_1_Saptha_divitiosa
+|             |     |      +--|
+|             |     |         |         +-----------------En_co_LS_1_Alasea_corniculata
+|             |     |         |      +--|
+|             |     |         |      |  |           +--------H_di_FL_4_Hemerophila_diva
+|             |     |         |      |  |        +--|
+|             |     |         |      |  |        |  +---------H_hou_CaR_2_Hemerophila_houttuinialis
+|             |     |         |      |  |     +--|
+|             |     |         |      |  |     |  +-----------Hfel6649GQ857_Hemerophila_felis
+|             |     |         |      |  |  +--|
+|             |     |         |      |  |  |  +------------He_al_PA_Hemerophila_albertiana
+|             |     |         |      |  +--|
+|             |     |         |      |     +--------------R_gau_LS_1_Rhobonda_gaurisana
+|             |     |         |   +--|
+|             |     |         |   |  |                   +--H_gr_TP_1_Hemerophila_gradella
+|             |     |         |   |  |               +---|
+|             |     |         |   |  |               |   +--H_wgn_LS_2_Hemerophila_sp.
+|             |     |         |   |  |            +--|
+|             |     |         |   |  |            |  +----H_imm_LS_1_Hemerophila_immarginata
+|             |     |         |   |  |        +---|
+|             |     |         |   |  |        |   +-------Hexut6631_Hemerophila_xutholopa
+|             |     |         |   |  |  +-----|
+|             |     |         |   |  |  |     |     +-----H_lac_LS_3_Hemerophila_sp.
+|             |     |         |   |  |  |     |  +--|
+|             |     |         |   |  |  |     |  |  +---H_sil_I_Hemerophila_sp.
+|             |     |         |   |  |  |     +--|
+|             |     |         |   |  |  |        +------HfscLS1_5754_Hemerophila_JR5_fusca
+|             |     |         |   |  +--|
+|             |     |         |   |     +------------------Z_sci_LS_1_Zodia_scintillana
+|             |     |         +---|
+|             |     |             |          +-------T_spct_LS_3_Tortyra_spectabilis
+|             |     |             +----------|
+|             |     |                        +--------To_cup_Tortyra_cuprinella
+|             +-----|
+|                   |                           +----Br_mon_Brenthia_monolychna
+|                   |                       +---|
+|                   |                       |   +----Br_pa_TN_2_Brenthia_pavonacella
+|                   |                 +-----|
+|                   |                 |     +------------Br_st_LS_1_Brenthia_stimulans
+|                   |            +----|
+|                   |            |    +-------------Br_sp_TW_1_Brenthia_sp.
+|                   +------------|
+|                                +--------------Brh_Brenthia_hexaselena
+|
++-----------MM05835_Zarcinia_sp.
+
+Tree in newick format:
+
+(ANIC002281_Homadaula_sp.:0.0465128929,(ANIC002694_Imma_loxoscia:0.1629845341,((((An_a_CA_2_Anthophila_alpinella:0.0187840407,An_f_BE_2_Anthophila_fabriciana:0.0119428527):0.0799074868,(((MM05852_Prochoreutis_myllerana:0.0372427148,PrinCT1HLC697_Prochoreutis_inflatella:0.0326426482):0.0549165948,(Te_ge_WA_1_Tebenna_gemmalis:0.0477575357,Te_gn_ST_1_Tebenna_gnaphaliella:0.0646127146):0.0430160406):0.0122511401,MM11261_Asterivora_homotypa:0.0777328565):0.0257730430):0.0193666570,(((Ch_amm_TW_1_Choreutis_amethystodes:0.0452841801,(((Ch_ba_TW_2_Choreutis_basalis:0.0376167157,Ch_xa_TW_1_Choreutis_xantho:0.0432905288):0.0249744597,(ChnemHR1_Choreutis_nemorana:0.0371089322,Chp_Choreutis_pariana:0.0452758049):0.0057105061):0.0059210013,(Ch_hy_TW_2_Choreutis_hyligenes:0.0331966486,Ch_oph_TW_2_Choreutis_ophiosema:0.0240577744):0.0258015234):0.0054710313):0.0643039797,((MM07573_Saptha_libonota:0.0126644489,Sa_ber_TW_1_Saptha_beryllitis:0.0172528779):0.0523235443,Sa_div_TW_1_Saptha_divitiosa:0.0765558327):0.0406083382):0.0076179069,(((En_co_LS_1_Alasea_corniculata:0.1197090504,((((H_di_FL_4_Hemerophila_diva:0.0610222701,H_hou_CaR_2_Hemerophila_houttuinialis:0.0650677726):0.0214333110,Hfel6649GQ857_Hemerophila_felis:0.0798827927):0.0209286028,He_al_PA_Hemerophila_albertiana:0.0879092177):0.0115257629,R_gau_LS_1_Rhobonda_gaurisana:0.1018960091):0.0088518561):0.0122145168,(((((H_gr_TP_1_Hemerophila_gradella:0.0181986463,H_wgn_LS_2_Hemerophila_sp.:0.0193446733):0.0260346903,H_imm_LS_1_Hemerophila_immarginata:0.0382501628):0.0111368784,Hexut6631_Hemerophila_xutholopa:0.0536844976):0.0318730132,((H_lac_LS_3_Hemerophila_sp.:0.0394344677,H_sil_I_Hemerophila_sp.:0.0299097493):0.0128828324,HfscLS1_5754_Hemerophila_JR5_fusca:0.0487682528):0.0192832539):0.0411522028,Z_sci_LS_1_Zodia_scintillana:0.1281399807):0.0113875813):0.0185812990,(T_spct_LS_3_Tortyra_spectabilis:0.0536925303,To_cup_Tortyra_cuprinella:0.0619017279):0.0776256024):0.0261014915):0.0142387382):0.0509905569,((((Br_mon_Brenthia_monolychna:0.0368824081,Br_pa_TN_2_Brenthia_pavonacella:0.0378576610):0.0301952995,Br_st_LS_1_Brenthia_stimulans:0.0882402052):0.0413177889,Br_sp_TW_1_Brenthia_sp.:0.0945198340):0.0356696791,Brh_Brenthia_hexaselena:0.0993401762):0.0849896979):0.0448217085):0.0925441934,MM05835_Zarcinia_sp.:0.0781159962);
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 11 17:39:37 2024
+Total CPU time used: 89.1027 seconds (0h:1m:29s)
+Total wall-clock time used: 22.7344 seconds (0h:0m:22s)
+

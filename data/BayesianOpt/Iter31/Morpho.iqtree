@@ -1,0 +1,322 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/BayesianOpt/Morpho.parts
+Input file name: data/BayesianOpt/Morpho.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 202081
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 31 taxa with 27 partitions and 6372 total sites (0.00253124% missing data)
+
+  ID  Name    Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1   DNA	31	444	13	0	444	444
+   2  part2   DNA	31	359	40	14	345	345
+   3  part3   DNA	31	629	36	4	625	625
+   4  part4   DNA	31	825	53	3	822	822
+   5  part5   DNA	31	527	43	1	525	525
+   6  part6   DNA	31	222	34	2	220	220
+   7  part7   DNA	31	628	37	9	619	619
+   8  part8   DNA	31	344	36	8	336	336
+   9  part9   DNA	31	171	42	21	150	150
+  10  part10  DNA	31	341	41	30	309	309
+  11  part11  DNA	31	157	44	27	130	130
+  12  part12  DNA	31	48	39	37	11	11
+  13  part13  DNA	31	74	71	72	0	0
+  14  part14  DNA	31	50	49	48	0	0
+  15  part15  DNA	31	70	68	69	0	0
+  16  part16  DNA	31	88	77	81	0	0
+  17  part17  DNA	31	97	85	84	0	0
+  18  part18  DNA	31	74	73	67	0	0
+  19  part19  DNA	31	62	59	47	0	0
+  20  part20  DNA	31	97	92	75	0	0
+  21  part21  DNA	31	136	125	89	0	0
+  22  part22  DNA	31	134	121	66	0	0
+  23  part23  DNA	31	209	183	71	0	0
+  24  part24  DNA	31	299	268	113	0	0
+  25  part25  DNA	31	174	164	90	0	0
+  26  part26  DNA	31	112	109	44	0	0
+  27  part27  DNA	26	1	1	0	0	0
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2e:part1,TN+F+I:part2,F81+F+I:part3,F81+F+I:part4,F81+F+I:part5,TN+F+I:part6,HKY+F+I:part7,TN+F+I+G4:part8,TIM3+F+I:part9,TN+F+I+G4:part10,TIM+F+I:part11,TVM+F+R2:part12,TPM2+F+ASC+R2:part13,TIM2e+ASC:part14,K3P+ASC:part15,TPM2u+F+ASC+R2:part16,HKY+F+ASC+G4:part17,TPM2+F+ASC+R2:part18,TPM2+F+ASC+R2:part19,TPM2+F+ASC+G4:part20,TPM2+F+ASC+G4:part21,GTR+F+ASC+G4:part22,TIM3+F+ASC+R2:part23,K3Pu+F+ASC+R3:part24,TVMe+ASC:part25,HKY+F+ASC:part26,GTR+F+ASC+R7:part27
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  TIM2e             -707.4181   1422.8362 + 0.0000   1422.9273 + 0.0000   1439.2195 + 0.0000
+   2  TN+F+I            -739.6189   1493.2378 + 0.0000   1493.5569 + 0.0000   1520.4211 + 0.0000
+   3  F81+F+I           -878.6121   1767.2243 + 0.0000   1767.3206 + 0.0000   1789.4449 + 0.0000
+   4  F81+F+I          -1098.2503   2206.5006 + 0.0000   2206.5739 + 0.0000   2230.0775 + 0.0000
+   5  F81+F+I           -707.8683   1425.7365 + 0.0000   1425.8517 + 0.0000   1447.0725 + 0.0000
+   6  TN+F+I            -324.5044    663.0088 + 0.0000    663.5321 + 0.0000    686.8275 + 0.0000
+   7  HKY+F+I           -912.2092   1836.4184 + 0.0000   1836.5536 + 0.0000   1863.0736 + 0.0000
+   8  TN+F+I+G4         -505.0467   1026.0935 + 0.0000   1026.5233 + 0.0000   1056.8186 + 0.0000
+   9  TIM3+F+I          -503.5845   1023.1690 + 0.0000   1024.0578 + 0.0000   1048.3023 + 0.0000
+  10  TN+F+I+G4         -895.0174   1806.0347 + 0.0000   1806.4685 + 0.0000   1836.6898 + 0.0000
+  11  TIM+F+I           -549.9383   1115.8765 + 0.0000   1116.8495 + 0.0000   1140.3265 + 0.0000
+  12  TVM+F+R2          -466.3396    952.6793 + 0.0000    958.6252 + 0.0000    971.3913 + 0.0000
+  13  TPM2+F+ASC+R2     -740.6547   1497.3094 + 0.0000   1499.5248 + 0.0000   1515.7420 + 0.0000
+  14  TIM2e+ASC         -500.8299   1009.6599 + 0.0000   1010.5488 + 0.0000   1017.3080 + 0.0000
+  15  K3P+ASC           -710.6234   1427.2469 + 0.0000   1427.6105 + 0.0000   1433.9924 + 0.0000
+  16  TPM2u+F+ASC+R2    -819.5484   1655.0967 + 0.0000   1656.9195 + 0.0000   1674.9154 + 0.0000
+  17  HKY+F+ASC+G4      -922.9162   1857.8325 + 0.0000   1858.7658 + 0.0000   1873.2807 + 0.0000
+  18  TPM2+F+ASC+R2     -763.0641   1542.1283 + 0.0000   1544.3437 + 0.0000   1560.5608 + 0.0000
+  19  TPM2+F+ASC+R2     -566.6176   1149.2352 + 0.0000   1151.9522 + 0.0000   1166.2523 + 0.0000
+  20  TPM2+F+ASC+G4     -926.8132   1867.6264 + 0.0000   1868.8849 + 0.0000   1885.6494 + 0.0000
+  21  TPM2+F+ASC+G4    -1415.3421   2844.6842 + 0.0000   2845.5592 + 0.0000   2865.0728 + 0.0000
+  22  GTR+F+ASC+G4     -1420.4040   2860.8080 + 0.0000   2862.5966 + 0.0000   2889.7864 + 0.0000
+  23  TIM3+F+ASC+R2    -1938.4171   3894.8342 + 0.0000   3895.7388 + 0.0000   3924.9153 + 0.0000
+  24  K3Pu+F+ASC+R3    -2947.7108   5915.4216 + 0.0000   5916.1855 + 0.0000   5952.4260 + 0.0000
+  25  TVMe+ASC         -1819.5005   3649.0010 + 0.0000   3649.3582 + 0.0000   3664.7963 + 0.0000
+  26  HKY+F+ASC        -1480.4139   2970.8278 + 0.0000   2971.3938 + 0.0000   2984.4203 + 0.0000
+  27  GTR+F+ASC+R7       -11.4266     64.8532 + 0.0000    988.8532 + 0.0000     22.8532 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  TIM2e          0.0229  TIM2e{0.0001,63.3983,0.0001}+FQ
+   2  TN+F+I         0.1708  TN{1.97477,32.7091}+F{0.416419,0.182926,0.301566,0.099089}+I{0.944653}
+   3  F81+F+I        0.0278  F81+I{0.993011}
+   4  F81+F+I        0.0229  F81+I{0.990471}
+   5  F81+F+I        0.0229  F81+I{0.991587}
+   6  TN+F+I         0.1835  TN{0.0001,7.93244}+F{0.195938,0.450049,0.180051,0.173961}+I{0.990978}
+   7  HKY+F+I        0.0632  HKY{100}+F{0.272695,0.0529206,0.276456,0.397928}+I{0.978044}
+   8  TN+F+I+G4      0.1938  TN{0.0001,12.4965}+F{0.620215,0.0596035,0.167358,0.152823}+I{0.935596}+G4{0.356479}
+   9  TIM3+F+I       0.8169  TIM3{0.0001,10.1162,2.94328}+F{0.180549,0.491685,0.128191,0.199576}+I{0.813406}
+  10  TN+F+I+G4      0.7820  TN{6.94803,41.1491}+F{0.297318,0.139435,0.266665,0.296582}+I{0.792601}+G4{0.728415}
+  11  TIM+F+I        1.1083  TIM{20.9665,14.5099,100}+F{0.263631,0.148963,0.197424,0.389982}+I{0.692849}
+  12  TVM+F+R2       5.7182  TVM{0.0001,52.9749,17.4125,0.0001}+F{0.217312,0.22267,0.152571,0.407447}+R2{0.933203,0.693165,0.0667966,5.28674}
+  13  TPM2+F+ASC+R2  4.5471  TPM2{16.5301,100}+F{0.240876,0.234628,0.113753,0.410743}+ASC+R2{0.945926,0.81079,0.0540741,4.30988}
+  14  TIM2e+ASC      3.1769  TIM2e{14.1682,20.6993,100}+FQ+ASC
+  15  K3P+ASC        4.9449  K3P{57.6206,4.90971}+FQ+ASC
+  16  TPM2u+F+ASC+R2 4.5104  TPM2u{4.04608,22.4484}+F{0.21982,0.249344,0.0720581,0.458778}+ASC+R2{0.917614,0.577223,0.0823864,5.70886}
+  17  HKY+F+ASC+G4   3.0407  HKY{8.02098}+F{0.199606,0.170142,0.157891,0.472361}+ASC+G4{1.35154}
+  18  TPM2+F+ASC+R2  4.9398  TPM2{2.82836,15.0617}+F{0.248598,0.236064,0.12228,0.393057}+ASC+R2{0.843194,0.570281,0.156806,3.31073}
+  19  TPM2+F+ASC+R2  3.3438  TPM2{6.97409,27.5424}+F{0.223746,0.249256,0.102979,0.424019}+ASC+R2{0.896038,0.616244,0.103962,4.30756}
+  20  TPM2+F+ASC+G4  2.9348  TPM2{2.90651,19.3158}+F{0.253479,0.186162,0.0931741,0.467185}+ASC+G4{1.57821}
+  21  TPM2+F+ASC+G4  2.8957  TPM2{5.31876,22.1084}+F{0.200552,0.187013,0.0974739,0.514961}+ASC+G4{0.660786}
+  22  GTR+F+ASC+G4   4.6549  GTR{24.6701,51.4383,16.1877,12.7873,100}+F{0.191866,0.176566,0.104609,0.52696}+ASC+G4{0.471971}
+  23  TIM3+F+ASC+R2  0.6947  TIM3{0.605996,1.33957,3.52614}+F{0.358368,0.227223,0.11905,0.295358}+ASC+R2{0.924118,0.259785,0.075882,10.0146}
+  24  K3Pu+F+ASC+R3  0.9857  K3Pu{4.1887,1.8336}+F{0.434124,0.146025,0.156958,0.262894}+ASC+R3{0.898686,0.242549,0.00468265,7.58458,0.0966309,7.72537}
+  25  TVMe+ASC       4.1530  TVMe{2.65589,5.67164,5.47443,1.35591}+FQ+ASC
+  26  HKY+F+ASC      5.9748  HKY{2.32969}+F{0.359645,0.129083,0.136103,0.37517}+ASC
+  27  GTR+F+ASC+R7   10.0324  GTR{2.90913,95.8992,0.0001,5.60264,33.924}+F{0.0384616,0.884615,0.0384616,0.0384616}+ASC+R7{0.266819,0.000985207,5.73928e-07,0.0167112,5.73928e-07,0.161537,5.73928e-07,0.326365,0.246335,1.33523,0.48627,1.37787,0.000573928,1.40503}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -25177.2688 (s.e. 420.8353)
+Unconstrained log-likelihood (without tree): -20336.1982
+Number of free parameters (#branches + #model parameters): 258
+Akaike information criterion (AIC) score: 50870.5377
+Corrected Akaike information criterion (AICc) score: 50892.4000
+Bayesian information criterion (BIC) score: 52614.5322
+
+Total tree length (sum of branch lengths): 0.6515
+Sum of internal branch lengths: 0.2928 (44.9518% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'CP03_82_Morpho_aurora' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--CP03_82_Morpho_aurora
+|
++--CP04_86_Morpho_aurora
+|
+|                                  +--CP07_01_Morpho_amphitryon
+|                              +---| (100)
+|                              |   +--NW126_1_Morpho_hercules
+|                        +-----| (100)
+|                        |     |   +--NW110_12_Morpho_hecuba
+|                        |     +---| (100)
+|                        |         +----NW126_22_Morpho_cisseis
+|                     +--| (89)
+|                     |  |       +----NW110_13_Morpho_rhetenor
+|                     |  |  +----| (100)
+|                     |  |  |    +--NW134_8_Morpho_cypris
+|                     |  +--| (98)
+|                     |     +--------NW110_7_Morpho_anaxibia
+|                  +--| (97)
+|                  |  |                  +--------------------------CP09_56_Caerois_chorinaeus
+|                  |  |      +-----------| (100)
+|                  |  |      |           +------------------NW109_12_Antirrhea_philoctetes
+|                  |  +------| (100)
+|                  |         |          +--NW110_17_Morpho_marcus
+|                  |         +----------| (100)
+|                  |                    |  +--NW134_7_Morpho_eugenia
+|                  |                    +--| (100)
+|                  |                       +**PM14_35_Morpho_eugenia
+|               +--| (73)
+|               |  |         +--NW110_18_Morpho_polyphemus
+|               |  +---------| (100)
+|               |            +--NW162_9_Morpho_polyphemus
+|            +--| (100)
+|            |  |     +---NW100_2_Morpho_epistrophus
+|            |  |  +--| (100)
+|            |  |  |  +-----NW110_16_Morpho_deidamia
+|            |  +--| (100)
+|            |     |            +--NW103_6_Morpho_helenor
+|            |     |         +--| (100)
+|            |     |         |  +--NW134_5_Morpho_achilles
+|            |     |      +--| (66)
+|            |     |      |  +--NW66_5_Morpho_helenor
+|            |     |  +---| (100)
+|            |     |  |   +--NW127_12_Morpho_helenor
+|            |     +--| (100)
+|            |        +---NW118_10_Morpho_granadensis
+|         +--| (100)
+|         |  |    +----NW109_13_Morpho_amathonte
+|         |  +----| (100)
+|         |       |  +--NW110_11_Morpho_menelaus
+|         |       +--| (100)
+|         |          +--NW110_9_Morpho_menelaus
+|      +--| (81)
+|      |  |    +--CP07_04_Morpho_sulkowskyi
+|      |  +----| (100)
+|      |       |  +**NW116_1_Morpho_sulkowskyi
+|      |       +--| (100)
+|      |          +**NW134_2_Morpho_sulkowskyi
++------| (100)
+       |  +-----NW100_3_Morpho_aega
+       +--| (96)
+          +---NW110_15_Morpho_portis
+
+Tree in newick format:
+
+(CP03_82_Morpho_aurora:0.0007325703,CP04_86_Morpho_aurora:0.0006159006,(((((((((CP07_01_Morpho_amphitryon:0.0095134146,NW126_1_Morpho_hercules:0.0099361995)100:0.0123120876,(NW110_12_Morpho_hecuba:0.0103148039,NW126_22_Morpho_cisseis:0.0135859689)100:0.0119611326)100:0.0170150085,((NW110_13_Morpho_rhetenor:0.0149147946,NW134_8_Morpho_cypris:0.0071515943)100:0.0141065789,NW110_7_Morpho_anaxibia:0.0246807239)98:0.0056101066)89:0.0014993898,((CP09_56_Caerois_chorinaeus:0.0734011160,NW109_12_Antirrhea_philoctetes:0.0527411419)100:0.0333218110,(NW110_17_Morpho_marcus:0.0100704141,(NW134_7_Morpho_eugenia:0.0010165387,PM14_35_Morpho_eugenia:0.0000029485)100:0.0072657717)100:0.0312727623)100:0.0190293805)97:0.0020794642,(NW110_18_Morpho_polyphemus:0.0008666900,NW162_9_Morpho_polyphemus:0.0037719078)100:0.0289422608)73:0.0021284320,((NW100_2_Morpho_epistrophus:0.0121871106,NW110_16_Morpho_deidamia:0.0183002727)100:0.0052286058,((((NW103_6_Morpho_helenor:0.0006234369,NW134_5_Morpho_achilles:0.0019248024)100:0.0025011235,NW66_5_Morpho_helenor:0.0052551539)66:0.0013655364,NW127_12_Morpho_helenor:0.0055332055)100:0.0116694866,NW118_10_Morpho_granadensis:0.0128937910)100:0.0095235279)100:0.0048278109)100:0.0039873300,(NW109_13_Morpho_amathonte:0.0142036722,(NW110_11_Morpho_menelaus:0.0082625652,NW110_9_Morpho_menelaus:0.0054751862)100:0.0080487911)100:0.0146269557)100:0.0055723185,(CP07_04_Morpho_sulkowskyi:0.0044393864,(NW116_1_Morpho_sulkowskyi:0.0000027311,NW134_2_Morpho_sulkowskyi:0.0000028178)100:0.0046395393)100:0.0142263879)81:0.0017836360,(NW100_3_Morpho_aega:0.0187048514,NW110_15_Morpho_portis:0.0128573510)96:0.0030209549)100:0.0199209572);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -25177.266098
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--CP03_82_Morpho_aurora
+|
++--CP04_86_Morpho_aurora
+|
+|                                  +--CP07_01_Morpho_amphitryon
+|                              +---| (100)
+|                              |   +--NW126_1_Morpho_hercules
+|                        +-----| (100)
+|                        |     |   +--NW110_12_Morpho_hecuba
+|                        |     +---| (100)
+|                        |         +----NW126_22_Morpho_cisseis
+|                     +--| (89)
+|                     |  |       +----NW110_13_Morpho_rhetenor
+|                     |  |  +----| (100)
+|                     |  |  |    +--NW134_8_Morpho_cypris
+|                     |  +--| (98)
+|                     |     +--------NW110_7_Morpho_anaxibia
+|                  +--| (97)
+|                  |  |                  +--------------------------CP09_56_Caerois_chorinaeus
+|                  |  |      +-----------| (100)
+|                  |  |      |           +------------------NW109_12_Antirrhea_philoctetes
+|                  |  +------| (100)
+|                  |         |          +--NW110_17_Morpho_marcus
+|                  |         +----------| (100)
+|                  |                    |  +--NW134_7_Morpho_eugenia
+|                  |                    +--| (100)
+|                  |                       +--PM14_35_Morpho_eugenia
+|               +--| (73)
+|               |  |         +--NW110_18_Morpho_polyphemus
+|               |  +---------| (100)
+|               |            +--NW162_9_Morpho_polyphemus
+|            +--| (100)
+|            |  |     +---NW100_2_Morpho_epistrophus
+|            |  |  +--| (100)
+|            |  |  |  +-----NW110_16_Morpho_deidamia
+|            |  +--| (100)
+|            |     |            +--NW103_6_Morpho_helenor
+|            |     |         +--| (100)
+|            |     |         |  +--NW134_5_Morpho_achilles
+|            |     |      +--| (66)
+|            |     |      |  +--NW66_5_Morpho_helenor
+|            |     |  +---| (100)
+|            |     |  |   +--NW127_12_Morpho_helenor
+|            |     +--| (100)
+|            |        +---NW118_10_Morpho_granadensis
+|         +--| (100)
+|         |  |    +----NW109_13_Morpho_amathonte
+|         |  +----| (100)
+|         |       |  +--NW110_11_Morpho_menelaus
+|         |       +--| (100)
+|         |          +--NW110_9_Morpho_menelaus
+|      +--| (81)
+|      |  |    +--CP07_04_Morpho_sulkowskyi
+|      |  +----| (100)
+|      |       |  +--NW116_1_Morpho_sulkowskyi
+|      |       +--| (100)
+|      |          +--NW134_2_Morpho_sulkowskyi
++------| (100)
+       |  +-----NW100_3_Morpho_aega
+       +--| (96)
+          +---NW110_15_Morpho_portis
+
+
+Consensus tree in newick format: 
+
+(CP03_82_Morpho_aurora:0.0007319770,CP04_86_Morpho_aurora:0.0006160178,(((((((((CP07_01_Morpho_amphitryon:0.0095162128,NW126_1_Morpho_hercules:0.0099272201)100:0.0123080245,(NW110_12_Morpho_hecuba:0.0103127759,NW126_22_Morpho_cisseis:0.0135786550)100:0.0119569761)100:0.0170045273,((NW110_13_Morpho_rhetenor:0.0149256999,NW134_8_Morpho_cypris:0.0071448602)100:0.0140788778,NW110_7_Morpho_anaxibia:0.0246666847)98:0.0056170048)89:0.0014989908,((CP09_56_Caerois_chorinaeus:0.0733588422,NW109_12_Antirrhea_philoctetes:0.0527138207)100:0.0333543367,(NW110_17_Morpho_marcus:0.0100714255,(NW134_7_Morpho_eugenia:0.0010152201,PM14_35_Morpho_eugenia:0.0000026911)100:0.0072632796)100:0.0312641798)100:0.0190342924)97:0.0020789970,(NW110_18_Morpho_polyphemus:0.0008674938,NW162_9_Morpho_polyphemus:0.0037703341)100:0.0289364600)73:0.0021285200,((NW100_2_Morpho_epistrophus:0.0121855696,NW110_16_Morpho_deidamia:0.0182972839)100:0.0052293202,((((NW103_6_Morpho_helenor:0.0006228827,NW134_5_Morpho_achilles:0.0019238988)100:0.0025002453,NW66_5_Morpho_helenor:0.0052538330)66:0.0013656932,NW127_12_Morpho_helenor:0.0055329688)100:0.0116675369,NW118_10_Morpho_granadensis:0.0128917596)100:0.0095228489)100:0.0048277955)100:0.0039858761,(NW109_13_Morpho_amathonte:0.0142010194,(NW110_11_Morpho_menelaus:0.0082614839,NW110_9_Morpho_menelaus:0.0054739962)100:0.0080477697)100:0.0146259761)100:0.0055701666,(CP07_04_Morpho_sulkowskyi:0.0044387137,(NW116_1_Morpho_sulkowskyi:0.0000021526,NW134_2_Morpho_sulkowskyi:0.0000022369)100:0.0046382054)100:0.0142238553)81:0.0017834665,(NW100_3_Morpho_aega:0.0187006437,NW110_15_Morpho_portis:0.0128543258)96:0.0030228421)100:0.0199172872);
+
+TIME STAMP
+----------
+
+Date and time: Wed Jan 17 14:43:23 2024
+Total CPU time used: 64.962329 seconds (0h:1m:4s)
+Total wall-clock time used: 16.79515815 seconds (0h:0m:16s)
+

@@ -1,0 +1,182 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/Protein/empirical/RatePartition-4/Nguyen_2016b.rates_4.0.nex
+Input file name: data/Protein/empirical/Nguyen_2016b.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 149479
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 31 taxa with 8 partitions and 680 total sites (0% missing data)
+
+  ID  Name          Type	Seq	Site	Unique	Infor	Invar	Const
+   1  Partition_1   AA	31	429	44	1	427	427
+   2  Partition_4   AA	31	26	26	0	5	5
+   3  Partition_5   AA	31	39	38	19	7	7
+   4  Partition_6   AA	31	40	38	34	1	1
+   5  Partition_7   AA	31	23	23	15	3	3
+   6  Partition_8   AA	31	24	24	21	0	0
+   7  Partition_9   AA	31	34	34	29	3	3
+   8  Partition_10  AA	31	65	65	62	1	1
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: VT:Partition_1,LG:Partition_4,LG:Partition_5,LG:Partition_6,LG:Partition_7,LG:Partition_8,LG:Partition_9,Dayhoff+G4:Partition_10
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  VT               -1261.4420   2524.8840 + 0.0000   2524.8934 + 0.0000   2528.9455 + 0.0000
+   2  LG                -192.9450    387.8901 + 0.0000    388.0567 + 0.0000    389.1482 + 0.0000
+   3  LG                -329.6863    661.3726 + 0.0000    661.4807 + 0.0000    663.0362 + 0.0000
+   4  LG                -391.2999    784.5999 + 0.0000    784.7052 + 0.0000    786.2888 + 0.0000
+   5  LG                -239.3039    480.6078 + 0.0000    480.7983 + 0.0000    481.7433 + 0.0000
+   6  LG                -325.8296    653.6592 + 0.0000    653.8410 + 0.0000    654.8373 + 0.0000
+   7  LG                -547.4656   1096.9312 + 0.0000   1097.0562 + 0.0000   1098.4575 + 0.0000
+   8  Dayhoff+G4       -1790.8332   3585.6664 + 0.0000   3585.8600 + 0.0000   3590.0152 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  VT             0.0079  VT
+   2  LG             0.7613  LG
+   3  LG             0.9505  LG
+   4  LG             1.1938  LG
+   5  LG             1.7509  LG
+   6  LG             2.0338  LG
+   7  LG             2.8276  LG
+   8  Dayhoff+G4     5.9502  Dayhoff+G4{4.97819}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5059.4674 (s.e. 219.2062)
+Unconstrained log-likelihood (without tree): -2346.2729
+Number of free parameters (#branches + #model parameters): 67
+Akaike information criterion (AIC) score: 10252.9349
+Corrected Akaike information criterion (AICc) score: 10267.8238
+Bayesian information criterion (BIC) score: 10555.9151
+
+Total tree length (sum of branch lengths): 1.2210
+Sum of internal branch lengths: 0.6288 (51.5031% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0015) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'P._barbatus_h1' is drawn at root
+
++--P._barbatus_h1
+|
++**S._invicta_h1
+|
+|  +--H._saltator_h1
++**|
+   |     +--L._humile_h1
+   |  +--|
+   |  |  |     +**A._mellifera_h1
+   |  |  |  +--|
+   |  |  |  |  +**A._florea_h1
+   |  |  +--|
+   |  |     |  +--B._terrestris_h1
+   |  |     +--|
+   |  |        +**B._impatiens_h1
+   +--|
+      |     +**A._echinatior_h1
+      |  +--|
+      |  |  +--A._cephalotes_h1
+      +**|
+         |  +--C._floridanus_h1
+         +--|
+            |  +---N._vitripennis_h1
+            +--|
+               |                     +--A._mellifera_h2
+               |                 +---|
+               |                 |   +--A._florea_h2
+               |           +-----|
+               |           |     |        +--L._humile_h2
+               |           |     |     +--|
+               |           |     |     |  +--H._saltator_h2
+               |           |     |  +--|
+               |           |     |  |  |        +--A._echinatior_h2
+               |           |     |  |  |     +--|
+               |           |     |  |  |     |  +--A._cephalotes_h2
+               |           |     |  |  |  +--|
+               |           |     |  |  |  |  +--S._invicta_h2
+               |           |     |  |  +--|
+               |           |     |  |     +--P._barbatus_h2
+               |           |     +--|
+               |           |        +--C._floridanus_h2
+               |   +-------|
+               |   |       +-----------N._vitripennis_h2
+               +---|
+                   |     +--------T._castaneum
+                   |  +--|
+                   |  |  |  +----B._mori
+                   |  |  +--|
+                   |  |     |           +--A._pisum_h2
+                   |  |     |  +--------|
+                   |  |     |  |        +---A._pisum_h1
+                   |  |     +--|
+                   |  |        |        +--------C._quinquefasciatus_h2
+                   |  |        |  +-----|
+                   |  |        |  |     +--------D._melanogaster
+                   |  |        +--|
+                   |  |           +------------------------C._quinquefasciatus_h1
+                   +--|
+                      |                                               +--B._terrestris
+                      +-----------------------------------------------|
+                                                                      +--B._impatiens
+
+Tree in newick format:
+
+(P._barbatus_h1:0.0027136257,S._invicta_h1:0.0000021183,(H._saltator_h1:0.0062151480,((L._humile_h1:0.0029661922,((A._mellifera_h1:0.0000022298,A._florea_h1:0.0000022298):0.0015591325,(B._terrestris_h1:0.0015854725,B._impatiens_h1:0.0000022298):0.0032127801):0.0165420342):0.0015247045,((A._echinatior_h1:0.0000029078,A._cephalotes_h1:0.0029120956):0.0072332908,(C._floridanus_h1:0.0033083293,(N._vitripennis_h1:0.0241920359,((((A._mellifera_h2:0.0014822277,A._florea_h2:0.0030605994):0.0262210736,(((L._humile_h2:0.0191000134,H._saltator_h2:0.0173610602):0.0095714945,(((A._echinatior_h2:0.0031918193,A._cephalotes_h2:0.0071979214):0.0039139555,S._invicta_h2:0.0162553176):0.0035328920,P._barbatus_h2:0.0086360608):0.0066164811):0.0051841970,C._floridanus_h2:0.0156406146):0.0063295592):0.0377499293,N._vitripennis_h2:0.0705492973):0.0487883400,((T._castaneum:0.0512265344,(B._mori:0.0313585390,((A._pisum_h2:0.0142048544,A._pisum_h1:0.0248761744):0.0510625123,((C._quinquefasciatus_h2:0.0547971042,D._melanogaster:0.0519904366):0.0366015605,C._quinquefasciatus_h1:0.1400002763):0.0124749929):0.0098742912):0.0106234867):0.0080571740,(B._terrestris:0.0083399535,B._impatiens:0.0073990220):0.2667706160):0.0179916111):0.0243071621):0.0070924051):0.0046396463):0.0014289227):0.0014887461):0.0000024321);
+
+TIME STAMP
+----------
+
+Date and time: Tue Jan 16 14:17:48 2024
+Total CPU time used: 37.1046 seconds (0h:0m:37s)
+Total wall-clock time used: 9.34921 seconds (0h:0m:9s)
+

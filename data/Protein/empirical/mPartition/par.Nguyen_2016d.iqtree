@@ -1,0 +1,136 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/Protein/empirical/mPartition/par.Nguyen_2016d.phy
+Input file name: data/Protein/empirical/Nguyen_2016d.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 632728
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 17 taxa with 3 partitions and 704 total sites (0% missing data)
+
+  ID  Name                Type	Seq	Site	Unique	Infor	Invar	Const
+   1  ParInv              AA	17	134	39	0	134	134
+   2  Nguyen_2016d.phyP3  AA	17	281	167	94	157	157
+   3  Nguyen_2016d.phyP2  AA	17	289	224	71	82	82
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG:ParInv,LG+R2:Nguyen_2016d.phyP3,JTT:Nguyen_2016d.phyP2
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  LG                -510.1146   1022.2293 + 0.0000   1022.2596 + 0.0000   1025.1271 + 0.0000
+   2  LG+R2            -3090.2877   6186.5753 + 0.0000   6186.6620 + 0.0000   6197.4904 + 0.0000
+   3  JTT              -2631.7350   5265.4699 + 0.0000   5265.4839 + 0.0000   5269.1364 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  LG             0.0157  LG
+   2  LG+R2          1.7159  LG+R2{0.621096,0.0363947,0.378904,2.57953}
+   3  JTT            0.7603  JTT
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6086.6031 (s.e. 200.3628)
+Unconstrained log-likelihood (without tree): -3268.5151
+Number of free parameters (#branches + #model parameters): 35
+Akaike information criterion (AIC) score: 12243.2061
+Corrected Akaike information criterion (AICc) score: 12246.9786
+Bayesian information criterion (BIC) score: 12402.6934
+
+Total tree length (sum of branch lengths): 1.7640
+Sum of internal branch lengths: 0.3225 (18.2850% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'C._quinquefasciatus' is drawn at root
+
++---------C._quinquefasciatus
+|
++-----------------D._melanogaster
+|
+|          +--------------------B._mori
+|      +---|
+|      |   |                     +--A._cepahlotes
+|      |   |                  +--|
+|      |   |                  |  +--A._echinatior
+|      |   |               +--|
+|      |   |               |  |  +--L._humile
+|      |   |               |  +--|
+|      |   |               |     |  +--P._barbatus
+|      |   |               |     +--|
+|      |   |               |        +------------------------S._invicta
+|      |   |            +--|
+|      |   |            |  +--C._floridanus
+|      |   |        +---|
+|      |   |        |   +---H._saltator
+|      |   |     +--|
+|      |   |     |  |     +**A._florea
+|      |   |     |  |  +--|
+|      |   |     |  |  |  +**A._mellifera
+|      |   |     |  +--|
+|      |   |     |     |  +--B._impatiens
+|      |   |     |     +--|
+|      |   |     |        +--B._terrestris
+|      |   |  +--|
+|      |   |  |  +------N._vitrepennis
+|      |   +--|
+|      |      +-------------------------------------------A._pisum
++------|
+       +----------T._castaneum
+
+Tree in newick format:
+
+(C._quinquefasciatus:0.0976524848,D._melanogaster:0.1645830677,((B._mori:0.1927331914,(((((((A._cepahlotes:0.0123046804,A._echinatior:0.0124820931):0.0067107137,(L._humile:0.0292604224,(P._barbatus:0.0238182009,S._invicta:0.2339705300):0.0033761495):0.0038870851):0.0073880102,C._floridanus:0.0140460142):0.0115199789,H._saltator:0.0449128566):0.0432900544,((A._florea:0.0000029030,A._mellifera:0.0014139016):0.0289633538,(B._impatiens:0.0044080968,B._terrestris:0.0029445868):0.0263388787):0.0187939080):0.0242580792,N._vitrepennis:0.0690490189):0.0365403692,A._pisum:0.4078392927):0.0280966103):0.0402625091,T._castaneum:0.1010437569):0.0720791948);
+
+TIME STAMP
+----------
+
+Date and time: Tue Jan 16 14:15:55 2024
+Total CPU time used: 19.7332 seconds (0h:0m:19s)
+Total wall-clock time used: 4.93668 seconds (0h:0m:4s)
+

@@ -1,0 +1,489 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/BS/Noctuidae.parts
+Input file name: data/BS/Noctuidae.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 244041
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 78 taxa with 20 partitions and 6365 total sites (0% missing data)
+
+  ID  Name    Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1   DNA	78	1522	366	3	1519	1519
+   2  part2   DNA	78	1918	444	2	1916	1916
+   3  part3   DNA	78	168	77	5	163	163
+   4  part4   DNA	78	60	49	22	38	38
+   5  part5   DNA	78	115	113	102	13	13
+   6  part6   DNA	78	140	132	121	19	19
+   7  part7   DNA	78	159	139	131	27	27
+   8  part8   DNA	78	144	142	140	4	4
+   9  part9   DNA	78	128	128	125	3	3
+  10  part10  DNA	78	174	166	161	11	11
+  11  part11  DNA	78	202	202	202	0	0
+  12  part12  DNA	78	179	167	166	13	13
+  13  part13  DNA	78	166	166	148	0	0
+  14  part14  DNA	78	188	188	155	0	0
+  15  part15  DNA	78	214	213	131	0	0
+  16  part16  DNA	78	214	213	146	0	0
+  17  part17  DNA	78	300	299	205	0	0
+  18  part18  DNA	78	229	228	166	0	0
+  19  part19  DNA	78	143	143	104	0	0
+  20  part20  DNA	78	2	2	2	0	0
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F+I:part1,HKY+F+I:part2,GTR+F+I+G4:part3,TVM+F+I+G4:part4,TVMe+I+G4:part5,GTR+F+I+G4:part6,TVM+F+R4:part7,GTR+F+R3:part8,SYM+R3:part9,TVM+F+R3:part10,GTR+F+ASC+R4:part11,K3Pu+F+R3:part12,TVM+F+ASC+G4:part13,GTR+F+ASC+R4:part14,TVM+F+ASC+R4:part15,GTR+F+ASC+R4:part16,TVM+F+ASC+R5:part17,GTR+F+ASC+R4:part18,GTR+F+ASC+R3:part19,F81+F+ASC:part20
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  F81+F+I          -1545.4843   3100.9686 + 0.0000   3101.0082 + 0.0000   3127.6075 + 0.0000
+   2  HKY+F+I          -2375.3665   4762.7330 + 0.0000   4762.7769 + 0.0000   4796.0872 + 0.0000
+   3  GTR+F+I+G4        -445.2332    912.4663 + 0.0000    914.1586 + 0.0000    946.8299 + 0.0000
+   4  TVM+F+I+G4        -987.3860   1994.7720 + 0.0000   1999.2618 + 0.0000   2015.7154 + 0.0000
+   5  TVMe+I+G4        -3945.0832   7904.1664 + 0.0000   7905.2131 + 0.0000   7923.3809 + 0.0000
+   6  GTR+F+I+G4       -4663.5553   9349.1106 + 0.0000   9351.1731 + 0.0000   9381.4687 + 0.0000
+   7  TVM+F+R4         -4921.6824   9871.3649 + 0.0000   9874.2815 + 0.0000   9914.3295 + 0.0000
+   8  GTR+F+R3         -5057.5685  10141.1370 + 0.0000  10143.9369 + 0.0000  10179.7445 + 0.0000
+   9  SYM+R3           -4597.9191   9215.8383 + 0.0000   9217.7186 + 0.0000   9244.3586 + 0.0000
+  10  TVM+F+R3         -5940.3954  11904.7908 + 0.0000  11906.7287 + 0.0000  11942.6995 + 0.0000
+  11  GTR+F+ASC+R4     -7970.4338  15970.8677 + 0.0000  15973.4483 + 0.0000  16020.4917 + 0.0000
+  12  K3Pu+F+R3        -6205.3997  12430.7994 + 0.0000  12432.1089 + 0.0000  12462.6732 + 0.0000
+  13  TVM+F+ASC+G4     -5963.4449  11944.8898 + 0.0000  11946.0437 + 0.0000  11972.8977 + 0.0000
+  14  GTR+F+ASC+R4     -6497.0375  13024.0750 + 0.0000  13026.8657 + 0.0000  13072.6216 + 0.0000
+  15  TVM+F+ASC+R4     -6464.8986  12957.7972 + 0.0000  12959.9077 + 0.0000  13004.9208 + 0.0000
+  16  GTR+F+ASC+R4     -5986.7545  12003.5091 + 0.0000  12005.9333 + 0.0000  12053.9987 + 0.0000
+  17  TVM+F+ASC+R5    -10368.0662  20768.1324 + 0.0000  20770.0547 + 0.0000  20827.3930 + 0.0000
+  18  GTR+F+ASC+R4     -7693.1405  15416.2810 + 0.0000  15418.5345 + 0.0000  15467.7869 + 0.0000
+  19  GTR+F+ASC+R3     -4842.9045   9711.8090 + 0.0000   9714.6308 + 0.0000   9750.3260 + 0.0000
+  20  F81+F+ASC          -98.2039    204.4078 + 0.0000    244.4078 + 0.0000    199.1804 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  F81+F+I        0.0219  F81+I{0.987251}
+   2  HKY+F+I        0.0188  HKY{100}+F{0.0288936,0.271309,0.331116,0.368682}+I{0.996773}
+   3  GTR+F+I+G4     0.2048  GTR{0.0001,0.0001,31.7414,0.0001,100}+F{0.00846389,0.261554,0.368451,0.361532}+I{0.829894}+G4{0.0200267}
+   4  TVM+F+I+G4     1.4437  TVM{0.0001,100,11.3388,0.0001}+F{0.105591,0.29323,0.226146,0.375033}+I{0.628107}+G4{6.1868}
+   5  TVMe+I+G4      3.5138  TVMe{4.78475,100,1.23917,0.0001}+FQ+I{0.106259}+G4{3.90461}
+   6  GTR+F+I+G4     2.8779  GTR{1.75569,100,14.1364,2.01792,71.6142}+F{0.182856,0.320912,0.154862,0.341371}+I{0.0816489}+G4{3.10189}
+   7  TVM+F+R4       2.5753  TVM{8.31074,100,22.8499,5.66136}+F{0.203834,0.291347,0.17835,0.326469}+R4{0.155737,0.023141,0.552949,0.637305,0.250229,1.74787,0.041085,5.02933}
+   8  GTR+F+R3       2.9472  GTR{10.357,100,25.4841,7.9968,63.4105}+F{0.20312,0.331532,0.123405,0.341943}+R3{0.637698,0.480273,0.32619,1.58911,0.0361114,4.85661}
+   9  SYM+R3         3.7427  SYM{10.8587,55.3969,29.639,2.27392,79.0753}+FQ+R3{0.677232,0.356351,0.282423,1.56174,0.0403455,7.87191}
+  10  TVM+F+R3       2.8136  TVM{3.75198,15.8508,7.398,3.04017}+F{0.238803,0.256043,0.170371,0.334783}+R3{0.493906,0.317671,0.286092,0.942122,0.220002,2.6071}
+  11  GTR+F+ASC+R4   3.2717  GTR{1.16693,9.0668,3.77189,1.73269,6.40357}+F{0.287943,0.287216,0.131039,0.293803}+ASC+R4{0.42577,0.231703,0.12404,0.640817,0.365588,1.51418,0.0846021,3.17124}
+  12  K3Pu+F+R3      2.8500  K3Pu{5.01849,1.94456}+F{0.269738,0.249095,0.11884,0.362327}+R3{0.472197,0.23959,0.326933,1.02601,0.200869,2.74522}
+  13  TVM+F+ASC+G4   2.6918  TVM{3.01026,11.9842,7.47533,2.69426}+F{0.188811,0.219393,0.205888,0.385908}+ASC+G4{0.9959}
+  14  GTR+F+ASC+R4   2.3869  GTR{2.81229,4.59085,4.20062,2.16323,8.98727}+F{0.225552,0.183466,0.22382,0.367163}+ASC+R4{0.409672,0.114914,0.177741,0.675032,0.282597,1.58966,0.12999,2.95184}
+  15  TVM+F+ASC+R4   0.5874  TVM{0.963911,6.13685,3.89582,1.65708}+F{0.280456,0.275849,0.146485,0.297211}+ASC+R4{0.826689,0.0466735,0.0665297,1.65846,0.045469,4.5398,0.061312,10.5144}
+  16  GTR+F+ASC+R4   0.7950  GTR{0.519063,4.05345,2.36292,1.35839,5.52039}+F{0.233033,0.323039,0.117562,0.326367}+ASC+R4{0.712432,0.0484031,0.12183,1.56313,0.120557,3.63224,0.0451807,7.46312}
+  17  TVM+F+ASC+R5   1.0590  TVM{0.635066,4.16734,2.16467,1.03803}+F{0.285434,0.279109,0.11274,0.322717}+ASC+R5{0.718589,0.0260644,0.0516773,0.70624,0.102564,2.24898,0.108357,4.86566,0.0188122,9.93385}
+  18  GTR+F+ASC+R4   2.0733  GTR{4.45323,6.82629,6.38492,4.78965,17.3171}+F{0.363602,0.12477,0.17342,0.338209}+ASC+R4{0.441049,0.0637516,0.253917,0.756799,0.193626,1.78437,0.111408,3.89754}
+  19  GTR+F+ASC+R3   2.7574  GTR{7.43311,18.4473,19.2971,12.2576,40.6989}+F{0.443099,0.087536,0.148558,0.320807}+ASC+R3{0.000567107,0.000999976,0.432326,0.258598,0.567107,1.5662}
+  20  F81+F+ASC      7.9302  F81+ASC
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -96332.4238 (s.e. 1725.1356)
+Unconstrained log-likelihood (without tree): -32013.2842
+Number of free parameters (#branches + #model parameters): 377
+Akaike information criterion (AIC) score: 193418.8476
+Corrected Akaike information criterion (AICc) score: 193466.4527
+Bayesian information criterion (BIC) score: 195966.8283
+
+Total tree length (sum of branch lengths): 5.4619
+Sum of internal branch lengths: 0.9198 (16.8404% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MM00998_Notodonta_dromedarius' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--------------------MM00998_Notodonta_dromedarius
+|
++----------------------------------MM09888_Thaumetopoea_solitaria
+|
+|                 +------------MM00160_Eutelia_adulatrix
+|              +--| (99)
+|              |  +------------RZ35_Targalla_silvicola
+|          +---| (100)
+|          |   |     +--------RZ120_Lophoptera_squammigera
+|          |   +-----| (100)
+|          |         +---------RZ541_Stictoptera_columba
++----------| (100)
+           |            +----------------MM04358_Catocala_sponsa
+           |         +--| (89)
+           |         |  +--------------------MM00963_Calyptra_thalictri
+           |     +---| (100)
+           |     |   |  +-----------------------------------MM01048_Lymantria_monacha
+           |     |   +--| (92)
+           |     |      +-----------------------MM03713_Arctia_caja
+           |  +--| (92)
+           |  |  |          +-------------------RZ469_Neostictoptera_nigropuncta
+           |  |  |  +-------| (100)
+           |  |  |  |       +--------------RZ634_Collomena_siopera
+           |  |  +--| (100)
+           |  |     |  +--------------------------RZ97_Eligma_narcissus
+           |  |     +--| (99)
+           |  |        +--------------------MM00107_Pseudoips_prasinanus
+           +--| (93)
+              |        +-------------RZ10_Dyops_chromatophila
+              |     +--| (100)
+              |     |  |   +-------RZ147_Pseudoarcte_melanis
+              |     |  +---| (100)
+              |     |      |  +------------RZ54_Arcte_modesta
+              |     |      +--| (93)
+              |     |         +----------RZ548_Pararcte_schneideriana
+              |  +--| (99)
+              |  |  |           +-----------RZ416_Belciana_kala
+              |  |  |     +-----| (100)
+              |  |  |     |     +---------RZ384_Belciana_biformis
+              |  |  |  +--| (97)
+              |  |  |  |  +--------------RZ636_Cyclodes_omma
+              |  |  +--| (99)
+              |  |     |          +----------RZ552_Ceroctena_amynta
+              |  |     +----------| (100)
+              |  |                +--------RZ281_Sosxetra_grata
+              +--| (100)
+                 |            +---------------MM00328_Autographa_gamma
+                 |        +---| (100)
+                 |        |   +------------MM05132_Abrostola_tripartita
+                 |     +--| (77)
+                 |     |  |     +-------------RZ87_Eucocytia_meeki
+                 |     |  +-----| (100)
+                 |     |        |     +-------RZ459_Thiacidas_sp
+                 |     |        |  +--| (100)
+                 |     |        |  |  +-----MM04583_Panthea_coenobita
+                 |     |        +--| (99)
+                 |     |           +---------RZ388_Antitrisuloides_catocalina
+                 |  +--| (76)
+                 |  |  |        +----------------MM04601_Deltote_uncula
+                 |  |  |     +--| (90)
+                 |  |  |     |  +-------------MM09267_Diloba_caeruleocephala
+                 |  |  |  +--| (89)
+                 |  |  |  |  +------------------CWM_94_0372_Raphia_abrupta_or_sp
+                 |  |  +--| (77)
+                 |  |     +------------MM04543_Cucullia_umbratica
+                 +--| (66)
+                    |               +----------MM09893_Emmelia_trabealis
+                    |     +---------| (100)
+                    |     |         +--------MM00152_Acontia_lucida
+                    |  +--| (53)
+                    |  |  |     +----------------RZ50_Amyna_octo
+                    |  |  |  +--| (82)
+                    |  |  |  |  |     +---------MM09894_Xanthodes_albago
+                    |  |  |  |  |  +--| (94)
+                    |  |  |  |  |  |  +--------RZ382_Ramadasa_pavo
+                    |  |  |  |  +--| (100)
+                    |  |  |  |     +-------------RZ395_Dyrzela_plagiata
+                    |  |  +--| (100)
+                    |  |     |     +-------------RZ351_Encruphion_leena
+                    |  |     |  +--| (100)
+                    |  |     |  |  |  +--------------RZ595_Vespola_caeruleifera
+                    |  |     |  |  +--| (99)
+                    |  |     |  |     |           +--RZ463_Parangitia_temperata
+                    |  |     |  |     +-----------| (100)
+                    |  |     |  |                 +--RZ464_Parangitia_mosaica
+                    |  |     +--| (99)
+                    |  |        |  +----------RZ472_Diopa_corone
+                    |  |        +--| (100)
+                    |  |           |     +-----------RZ621_Concana_mundissima
+                    |  |           |  +--| (99)
+                    |  |           |  |  +----------RZ482_Concana_permixta
+                    |  |           +--| (82)
+                    |  |              +-------------------RZ474_Concana_lecta
+                    +--| (52)
+                       |        +-------MM01162_Amphipyra_perflua
+                       |     +--| (100)
+                       |     |  +--------MM01542_Brachionycha_nubeculosa
+                       |  +--| (48)
+                       |  |  |      +-------------------RZ659_Cydosia_sp
+                       |  |  |  +---| (100)
+                       |  |  |  |   |  +------------------------RZ596_Flammona_quadrifasciata
+                       |  |  |  |   +--| (72)
+                       |  |  |  |      +-------MM00005_Panemeria_tenebrata
+                       |  |  +--| (50)
+                       |  |     |      +-----------MM06745_Craniophora_ligustri
+                       |  |     |   +--| (80)
+                       |  |     |   |  |     +-----RZ617_Cerma_cerintha
+                       |  |     |   |  |  +--| (100)
+                       |  |     |   |  |  |  +----------RZ619_Harrisimemna_trisignata
+                       |  |     |   |  +--| (82)
+                       |  |     |   |     |     +----RZ618_Comachara_cadburyi
+                       |  |     |   |     +-----| (100)
+                       |  |     |   |           +---RZ620_Polygrammate_hebraeicum
+                       |  |     +---| (100)
+                       |  |         |  +-------RZ597_Acronicta_americana
+                       |  |         +--| (100)
+                       |  |            |  +-------MM01529_Acronicta_rumicis
+                       |  |            +--| (95)
+                       |  |               +-------RZ616_Acronicta_fallax
+                       +--| (99)
+                          |  +-------------------MM07669_Periscepta_polysticta
+                          +--| (70)
+                             |     +-----------------RZ277_Aedia_leucomelas
+                             |  +--| (97)
+                             |  |  |  +---------------RZ511_Condica_illecta
+                             |  |  +--| (100)
+                             |  |     +------------RZ341_Hemicephalis_alesa
+                             +--| (100)
+                                |  +-----------MM05114_Pyrrhia_umbra
+                                +--| (100)
+                                   |        +------------RZ517_Chytonix_diehli
+                                   |     +--| (67)
+                                   |     |  |  +-----------------RZ658_Cromobergia_teichii
+                                   |     |  +--| (88)
+                                   |     |     |  +----MM04919_Cryphia_raptricula
+                                   |     |     +--| (100)
+                                   |     |        +-------RZ523_Stenoloba_futii
+                                   |  +--| (81)
+                                   |  |  |  +-----------RZ14_Tiracola_aureata
+                                   |  |  +--| (100)
+                                   |  |     |     +---------MM05153_Actinotia_polyodon
+                                   |  |     |  +--| (64)
+                                   |  |     |  |  +--------MM01651_Hoplodrina_octogenaria
+                                   |  |     +--| (87)
+                                   |  |        |     +---------MF_05_0053_Diaphone_sp
+                                   |  |        |  +--| (56)
+                                   |  |        |  |  +-------MM04752_Noctua_fimbriata
+                                   |  |        +--| (51)
+                                   |  |           |  +----MM01170_Apamea_crenata
+                                   |  |           +--| (100)
+                                   |  |              +---RR_98_0914_Ufeus_faunus
+                                   +--| (100)
+                                      |       +--------RZ545_Ecpatia_sp
+                                      +-------| (100)
+                                              +--------RZ25_Ecpatia_longinqua
+
+Tree in newick format:
+
+(MM00998_Notodonta_dromedarius:0.0949712664,MM09888_Thaumetopoea_solitaria:0.1547181921,(((MM00160_Eutelia_adulatrix:0.0597784425,RZ35_Targalla_silvicola:0.0579802060)99:0.0121170227,(RZ120_Lophoptera_squammigera:0.0421332184,RZ541_Stictoptera_columba:0.0455857741)100:0.0300310524)100:0.0200857005,((((MM04358_Catocala_sponsa:0.0754057311,MM00963_Calyptra_thalictri:0.0941029730)89:0.0097086092,(MM01048_Lymantria_monacha:0.1584864954,MM03713_Arctia_caja:0.1075796127)92:0.0170490912)100:0.0178542606,((RZ469_Neostictoptera_nigropuncta:0.0905149678,RZ634_Collomena_siopera:0.0678722272)100:0.0379140830,(RZ97_Eligma_narcissus:0.1180445120,MM00107_Pseudoips_prasinanus:0.0933713637)99:0.0124772725)100:0.0130167687)92:0.0078651674,(((RZ10_Dyops_chromatophila:0.0614455995,(RZ147_Pseudoarcte_melanis:0.0390455820,(RZ54_Arcte_modesta:0.0592963632,RZ548_Pararcte_schneideriana:0.0519449664)93:0.0018630141)100:0.0180598739)100:0.0106381535,(((RZ416_Belciana_kala:0.0545110030,RZ384_Belciana_biformis:0.0441077294)100:0.0291921880,RZ636_Cyclodes_omma:0.0661513864)97:0.0056960168,(RZ552_Ceroctena_amynta:0.0488068961,RZ281_Sosxetra_grata:0.0400141420)100:0.0507093212)99:0.0072107391)99:0.0067506374,((((MM00328_Autographa_gamma:0.0710457827,MM05132_Abrostola_tripartita:0.0581789392)100:0.0217802006,(RZ87_Eucocytia_meeki:0.0640885566,((RZ459_Thiacidas_sp:0.0381009161,MM04583_Panthea_coenobita:0.0283717167)100:0.0108356707,RZ388_Antitrisuloides_catocalina:0.0470406987)99:0.0131928119)100:0.0266503371)77:0.0028434879,(((MM04601_Deltote_uncula:0.0774280806,MM09267_Diloba_caeruleocephala:0.0633889218)90:0.0052703460,CWM_94_0372_Raphia_abrupta_or_sp:0.0840612110)89:0.0032521304,MM04543_Cucullia_umbratica:0.0571956895)77:0.0032595650)76:0.0030017970,(((MM09893_Emmelia_trabealis:0.0482877823,MM00152_Acontia_lucida:0.0427483534)100:0.0464758027,((RZ50_Amyna_octo:0.0765540182,((MM09894_Xanthodes_albago:0.0480254513,RZ382_Ramadasa_pavo:0.0413081581)94:0.0080548490,RZ395_Dyrzela_plagiata:0.0630563694)100:0.0128515763)82:0.0039173868,((RZ351_Encruphion_leena:0.0632092118,(RZ595_Vespola_caeruleifera:0.0698294601,(RZ463_Parangitia_temperata:0.0007130695,RZ464_Parangitia_mosaica:0.0016230272)100:0.0554235803)99:0.0072730112)100:0.0107215058,(RZ472_Diopa_corone:0.0500857668,((RZ621_Concana_mundissima:0.0530193793,RZ482_Concana_permixta:0.0520870449)99:0.0066895916,RZ474_Concana_lecta:0.0914018238)82:0.0026231808)100:0.0110597569)99:0.0063724601)100:0.0116276537)53:0.0035788981,(((MM01162_Amphipyra_perflua:0.0391657696,MM01542_Brachionycha_nubeculosa:0.0420984737)100:0.0091885153,((RZ659_Cydosia_sp:0.0898786040,(RZ596_Flammona_quadrifasciata:0.1123230666,MM00005_Panemeria_tenebrata:0.0390978630)72:0.0072509778)100:0.0191395203,((MM06745_Craniophora_ligustri:0.0565229361,((RZ617_Cerma_cerintha:0.0281311710,RZ619_Harrisimemna_trisignata:0.0480663703)100:0.0056364416,(RZ618_Comachara_cadburyi:0.0254999066,RZ620_Polygrammate_hebraeicum:0.0188477206)100:0.0276636633)82:0.0015784866)80:0.0015649502,(RZ597_Acronicta_americana:0.0362820447,(MM01529_Acronicta_rumicis:0.0365927339,RZ616_Acronicta_fallax:0.0360351432)95:0.0065989638)100:0.0090824768)100:0.0204887656)50:0.0031501229)48:0.0030594367,(MM07669_Periscepta_polysticta:0.0874991077,((RZ277_Aedia_leucomelas:0.0810523272,(RZ511_Condica_illecta:0.0737066275,RZ341_Hemicephalis_alesa:0.0585338822)100:0.0116859932)97:0.0033527376,(MM05114_Pyrrhia_umbra:0.0567483112,(((RZ517_Chytonix_diehli:0.0602551533,(RZ658_Cromobergia_teichii:0.0823404421,(MM04919_Cryphia_raptricula:0.0248732069,RZ523_Stenoloba_futii:0.0379772526)100:0.0106023802)88:0.0032936492)67:0.0017237433,(RZ14_Tiracola_aureata:0.0539733585,((MM05153_Actinotia_polyodon:0.0447307263,MM01651_Hoplodrina_octogenaria:0.0409679435)64:0.0039833254,((MF_05_0053_Diaphone_sp:0.0443346218,MM04752_Noctua_fimbriata:0.0388171599)56:0.0020581840,(MM01170_Apamea_crenata:0.0242498870,RR_98_0914_Ufeus_faunus:0.0216509090)100:0.0141189705)51:0.0015823343)87:0.0019294605)100:0.0123685288)81:0.0015972152,(RZ545_Ecpatia_sp:0.0431149167,RZ25_Ecpatia_longinqua:0.0420076486)100:0.0363490127)100:0.0068222552)100:0.0077445877)100:0.0067450795)70:0.0022065264)99:0.0087151927)52:0.0022166469)66:0.0036372657)100:0.0167705567)93:0.0101147870)100:0.0507877411);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -96332.422695
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------MM00998_Notodonta_dromedarius
+|
++----------------------------------MM09888_Thaumetopoea_solitaria
+|
+|                 +------------MM00160_Eutelia_adulatrix
+|              +--| (99)
+|              |  +------------RZ35_Targalla_silvicola
+|          +---| (100)
+|          |   |     +--------RZ120_Lophoptera_squammigera
+|          |   +-----| (100)
+|          |         +---------RZ541_Stictoptera_columba
++----------| (100)
+           |            +----------------MM04358_Catocala_sponsa
+           |         +--| (89)
+           |         |  +--------------------MM00963_Calyptra_thalictri
+           |     +---| (100)
+           |     |   |  +-----------------------------------MM01048_Lymantria_monacha
+           |     |   +--| (92)
+           |     |      +-----------------------MM03713_Arctia_caja
+           |  +--| (92)
+           |  |  |          +-------------------RZ469_Neostictoptera_nigropuncta
+           |  |  |  +-------| (100)
+           |  |  |  |       +--------------RZ634_Collomena_siopera
+           |  |  +--| (100)
+           |  |     |  +--------------------------RZ97_Eligma_narcissus
+           |  |     +--| (99)
+           |  |        +--------------------MM00107_Pseudoips_prasinanus
+           +--| (93)
+              |        +-------------RZ10_Dyops_chromatophila
+              |     +--| (100)
+              |     |  |   +-------RZ147_Pseudoarcte_melanis
+              |     |  +---| (100)
+              |     |      |  +------------RZ54_Arcte_modesta
+              |     |      +--| (93)
+              |     |         +----------RZ548_Pararcte_schneideriana
+              |  +--| (99)
+              |  |  |           +-----------RZ416_Belciana_kala
+              |  |  |     +-----| (100)
+              |  |  |     |     +---------RZ384_Belciana_biformis
+              |  |  |  +--| (97)
+              |  |  |  |  +--------------RZ636_Cyclodes_omma
+              |  |  +--| (99)
+              |  |     |          +----------RZ552_Ceroctena_amynta
+              |  |     +----------| (100)
+              |  |                +--------RZ281_Sosxetra_grata
+              +--| (100)
+                 |            +---------------MM00328_Autographa_gamma
+                 |        +---| (100)
+                 |        |   +------------MM05132_Abrostola_tripartita
+                 |     +--| (77)
+                 |     |  |     +-------------RZ87_Eucocytia_meeki
+                 |     |  +-----| (100)
+                 |     |        |     +-------RZ459_Thiacidas_sp
+                 |     |        |  +--| (100)
+                 |     |        |  |  +-----MM04583_Panthea_coenobita
+                 |     |        +--| (99)
+                 |     |           +---------RZ388_Antitrisuloides_catocalina
+                 |  +--| (76)
+                 |  |  |        +----------------MM04601_Deltote_uncula
+                 |  |  |     +--| (90)
+                 |  |  |     |  +-------------MM09267_Diloba_caeruleocephala
+                 |  |  |  +--| (89)
+                 |  |  |  |  +------------------CWM_94_0372_Raphia_abrupta_or_sp
+                 |  |  +--| (77)
+                 |  |     +------------MM04543_Cucullia_umbratica
+                 +--| (66)
+                    |               +----------MM09893_Emmelia_trabealis
+                    |     +---------| (100)
+                    |     |         +--------MM00152_Acontia_lucida
+                    |  +--| (53)
+                    |  |  |     +----------------RZ50_Amyna_octo
+                    |  |  |  +--| (82)
+                    |  |  |  |  |     +---------MM09894_Xanthodes_albago
+                    |  |  |  |  |  +--| (94)
+                    |  |  |  |  |  |  +--------RZ382_Ramadasa_pavo
+                    |  |  |  |  +--| (100)
+                    |  |  |  |     +-------------RZ395_Dyrzela_plagiata
+                    |  |  +--| (100)
+                    |  |     |     +-------------RZ351_Encruphion_leena
+                    |  |     |  +--| (100)
+                    |  |     |  |  |  +--------------RZ595_Vespola_caeruleifera
+                    |  |     |  |  +--| (99)
+                    |  |     |  |     |           +--RZ463_Parangitia_temperata
+                    |  |     |  |     +-----------| (100)
+                    |  |     |  |                 +--RZ464_Parangitia_mosaica
+                    |  |     +--| (99)
+                    |  |        |  +----------RZ472_Diopa_corone
+                    |  |        +--| (100)
+                    |  |           |     +-----------RZ621_Concana_mundissima
+                    |  |           |  +--| (99)
+                    |  |           |  |  +----------RZ482_Concana_permixta
+                    |  |           +--| (82)
+                    |  |              +-------------------RZ474_Concana_lecta
+                    +--| (52)
+                       |        +-------MM01162_Amphipyra_perflua
+                       |     +--| (100)
+                       |     |  +--------MM01542_Brachionycha_nubeculosa
+                       |  +--| (48)
+                       |  |  |      +-------------------RZ659_Cydosia_sp
+                       |  |  |  +---| (100)
+                       |  |  |  |   |  +------------------------RZ596_Flammona_quadrifasciata
+                       |  |  |  |   +--| (72)
+                       |  |  |  |      +-------MM00005_Panemeria_tenebrata
+                       |  |  +--| (50)
+                       |  |     |      +-----------MM06745_Craniophora_ligustri
+                       |  |     |   +--| (80)
+                       |  |     |   |  |     +-----RZ617_Cerma_cerintha
+                       |  |     |   |  |  +--| (100)
+                       |  |     |   |  |  |  +---------RZ619_Harrisimemna_trisignata
+                       |  |     |   |  +--| (82)
+                       |  |     |   |     |     +----RZ618_Comachara_cadburyi
+                       |  |     |   |     +-----| (100)
+                       |  |     |   |           +---RZ620_Polygrammate_hebraeicum
+                       |  |     +---| (100)
+                       |  |         |  +-------RZ597_Acronicta_americana
+                       |  |         +--| (100)
+                       |  |            |  +-------MM01529_Acronicta_rumicis
+                       |  |            +--| (95)
+                       |  |               +-------RZ616_Acronicta_fallax
+                       +--| (99)
+                          |  +-------------------MM07669_Periscepta_polysticta
+                          +--| (70)
+                             |     +-----------------RZ277_Aedia_leucomelas
+                             |  +--| (97)
+                             |  |  |  +---------------RZ511_Condica_illecta
+                             |  |  +--| (100)
+                             |  |     +------------RZ341_Hemicephalis_alesa
+                             +--| (100)
+                                |  +-----------MM05114_Pyrrhia_umbra
+                                +--| (100)
+                                   |        +------------RZ517_Chytonix_diehli
+                                   |     +--| (67)
+                                   |     |  |  +-----------------RZ658_Cromobergia_teichii
+                                   |     |  +--| (88)
+                                   |     |     |  +----MM04919_Cryphia_raptricula
+                                   |     |     +--| (100)
+                                   |     |        +-------RZ523_Stenoloba_futii
+                                   |  +--| (81)
+                                   |  |  |  +-----------RZ14_Tiracola_aureata
+                                   |  |  +--| (100)
+                                   |  |     |     +---------MM05153_Actinotia_polyodon
+                                   |  |     |  +--| (64)
+                                   |  |     |  |  +--------MM01651_Hoplodrina_octogenaria
+                                   |  |     +--| (87)
+                                   |  |        |     +---------MF_05_0053_Diaphone_sp
+                                   |  |        |  +--| (56)
+                                   |  |        |  |  +-------MM04752_Noctua_fimbriata
+                                   |  |        +--| (51)
+                                   |  |           |  +----MM01170_Apamea_crenata
+                                   |  |           +--| (100)
+                                   |  |              +---RR_98_0914_Ufeus_faunus
+                                   +--| (100)
+                                      |       +--------RZ545_Ecpatia_sp
+                                      +-------| (100)
+                                              +--------RZ25_Ecpatia_longinqua
+
+
+Consensus tree in newick format: 
+
+(MM00998_Notodonta_dromedarius:0.0949357776,MM09888_Thaumetopoea_solitaria:0.1546762707,(((MM00160_Eutelia_adulatrix:0.0597667614,RZ35_Targalla_silvicola:0.0579661549)99:0.0121193142,(RZ120_Lophoptera_squammigera:0.0421257628,RZ541_Stictoptera_columba:0.0455752403)100:0.0300287231)100:0.0200801129,((((MM04358_Catocala_sponsa:0.0753796328,MM00963_Calyptra_thalictri:0.0940731833)89:0.0097194215,(MM01048_Lymantria_monacha:0.1584129372,MM03713_Arctia_caja:0.1075155169)92:0.0170945037)100:0.0178505124,((RZ469_Neostictoptera_nigropuncta:0.0904802785,RZ634_Collomena_siopera:0.0678495679)100:0.0379302476,(RZ97_Eligma_narcissus:0.1180017318,MM00107_Pseudoips_prasinanus:0.0933307611)99:0.0124978292)100:0.0130237930)92:0.0078620416,(((RZ10_Dyops_chromatophila:0.0614246889,(RZ147_Pseudoarcte_melanis:0.0390332295,(RZ54_Arcte_modesta:0.0592754830,RZ548_Pararcte_schneideriana:0.0519263908)93:0.0018683191)100:0.0180584664)100:0.0106412976,(((RZ416_Belciana_kala:0.0544974190,RZ384_Belciana_biformis:0.0440937222)100:0.0291896131,RZ636_Cyclodes_omma:0.0661302070)97:0.0056995370,(RZ552_Ceroctena_amynta:0.0487953361,RZ281_Sosxetra_grata:0.0399988884)100:0.0507054793)99:0.0072144826)99:0.0067482838,((((MM00328_Autographa_gamma:0.0710173153,MM05132_Abrostola_tripartita:0.0581527754)100:0.0217862548,(RZ87_Eucocytia_meeki:0.0640685686,((RZ459_Thiacidas_sp:0.0380904778,MM04583_Panthea_coenobita:0.0283615488)100:0.0108367669,RZ388_Antitrisuloides_catocalina:0.0470264262)99:0.0131895240)100:0.0266427574)77:0.0028475281,(((MM04601_Deltote_uncula:0.0773867569,MM09267_Diloba_caeruleocephala:0.0633564778)90:0.0052838293,CWM_94_0372_Raphia_abrupta_or_sp:0.0840260873)89:0.0032580523,MM04543_Cucullia_umbratica:0.0571728545)77:0.0032614302)76:0.0030015162,(((MM09893_Emmelia_trabealis:0.0482692854,MM00152_Acontia_lucida:0.0427280865)100:0.0464648702,((RZ50_Amyna_octo:0.0765191575,((MM09894_Xanthodes_albago:0.0480069284,RZ382_Ramadasa_pavo:0.0412889239)94:0.0080568930,RZ395_Dyrzela_plagiata:0.0630273381)100:0.0128519807)82:0.0039212640,((RZ351_Encruphion_leena:0.0631800118,(RZ595_Vespola_caeruleifera:0.0697976493,(RZ463_Parangitia_temperata:0.0007125224,RZ464_Parangitia_mosaica:0.0016230876)100:0.0553933097)99:0.0072829211)100:0.0107264144,(RZ472_Diopa_corone:0.0500633139,((RZ621_Concana_mundissima:0.0529956697,RZ482_Concana_permixta:0.0520600427)99:0.0066961882,RZ474_Concana_lecta:0.0913623473)82:0.0026281582)100:0.0110617716)99:0.0063722197)100:0.0116226165)53:0.0035807627,(((MM01162_Amphipyra_perflua:0.0391445945,MM01542_Brachionycha_nubeculosa:0.0420759676)100:0.0091896353,((RZ659_Cydosia_sp:0.0898321010,(RZ596_Flammona_quadrifasciata:0.1122649593,MM00005_Panemeria_tenebrata:0.0390682806)72:0.0072587340)100:0.0191438885,((MM06745_Craniophora_ligustri:0.0564976942,((RZ617_Cerma_cerintha:0.0281179532,RZ619_Harrisimemna_trisignata:0.0480444568)100:0.0056379082,(RZ618_Comachara_cadburyi:0.0254913362,RZ620_Polygrammate_hebraeicum:0.0188390997)100:0.0276544204)82:0.0015794079)80:0.0015647540,(RZ597_Acronicta_americana:0.0362650884,(MM01529_Acronicta_rumicis:0.0365763954,RZ616_Acronicta_fallax:0.0360168338)95:0.0066001479)100:0.0090834682)100:0.0204789655)50:0.0031497147)48:0.0030599276,(MM07669_Periscepta_polysticta:0.0874538484,((RZ277_Aedia_leucomelas:0.0810039580,(RZ511_Condica_illecta:0.0736560801,RZ341_Hemicephalis_alesa:0.0584864040)100:0.0116987381)97:0.0033616176,(MM05114_Pyrrhia_umbra:0.0567173609,(((RZ517_Chytonix_diehli:0.0602182687,(RZ658_Cromobergia_teichii:0.0822904261,(MM04919_Cryphia_raptricula:0.0248571464,RZ523_Stenoloba_futii:0.0379557247)100:0.0105959778)88:0.0033011263)67:0.0017261173,(RZ14_Tiracola_aureata:0.0539427559,((MM05153_Actinotia_polyodon:0.0446999310,MM01651_Hoplodrina_octogenaria:0.0409404442)64:0.0039892500,((MF_05_0053_Diaphone_sp:0.0443077517,MM04752_Noctua_fimbriata:0.0387947526)56:0.0020582216,(MM01170_Apamea_crenata:0.0242370122,RR_98_0914_Ufeus_faunus:0.0216376376)100:0.0141139389)51:0.0015815234)87:0.0019298880)100:0.0123603219)81:0.0015994427,(RZ545_Ecpatia_sp:0.0430912315,RZ25_Ecpatia_longinqua:0.0419798679)100:0.0363420489)100:0.0068193486)100:0.0077401996)100:0.0067414672)70:0.0022057936)99:0.0087110141)52:0.0022152104)66:0.0036339718)100:0.0167609853)93:0.0101143277)100:0.0508054362);
+
+TIME STAMP
+----------
+
+Date and time: Fri Jan 19 17:23:05 2024
+Total CPU time used: 374.870065 seconds (0h:6m:14s)
+Total wall-clock time used: 49.003021 seconds (0h:0m:49s)
+

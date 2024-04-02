@@ -1,0 +1,346 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Partition file name: data/BayesOpt/Arctiina.parts
+Input file name: data/BayesOpt/Arctiina.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 299910
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 113 taxa with 8 partitions and 5809 total sites (0.0097499% missing data)
+
+  ID  Name   Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1  DNA	113	3194	513	28	3164	3164
+   2  part2  DNA	113	591	297	213	378	378
+   3  part3  DNA	113	460	285	259	200	200
+   4  part4  DNA	113	238	237	226	0	0
+   5  part5  DNA	113	243	233	210	0	0
+   6  part6  DNA	113	507	490	327	0	0
+   7  part7  DNA	113	575	563	294	0	0
+   8  part8  DNA	49	1	1	0	0	0
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+I+G4:part1,GTR+F+R4:part2,TIM2+F+R3:part3,K3Pu+F+ASC+R3:part4,TVM+F+ASC+R2:part5,GTR+F+ASC+R5:part6,SYM+ASC+R3:part7,GTR+F+ASC+R4:part8
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  TIM2+F+I+G4      -5377.9694  10773.9389 + 0.0000  10773.9954 + 0.0000  10828.5601 + 0.0000
+   2  GTR+F+R4         -5701.5663  11433.1327 + 0.0000  11433.9674 + 0.0000  11498.8599 + 0.0000
+   3  TIM2+F+R3        -6121.7836  12265.5673 + 0.0000  12266.1566 + 0.0000  12311.0108 + 0.0000
+   4  K3Pu+F+ASC+R3    -4635.3167   9290.6335 + 0.0000   9291.6026 + 0.0000   9325.3562 + 0.0000
+   5  TVM+F+ASC+R2     -4035.4269   8090.8537 + 0.0000   8091.8020 + 0.0000   8125.7843 + 0.0000
+   6  GTR+F+ASC+R5    -12286.3620  24606.7240 + 0.0000  24607.9755 + 0.0000  24678.6086 + 0.0000
+   7  SYM+ASC+R3       -9664.3762  19348.7524 + 0.0000  19349.1425 + 0.0000  19392.2961 + 0.0000
+   8  GTR+F+ASC+R4       -11.3107     52.6214 + 0.0000    532.6214 + 0.0000     22.6214 + 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  TIM2+F+I+G4    0.0336  TIM2{14.9118,90.0877,100}+F{0.286527,0.211773,0.242011,0.259689}+I{0.964684}+G4{0.0774368}
+   2  GTR+F+R4       1.5335  GTR{4.38421,41.6731,7.55771,3.22288,100}+F{0.2449,0.187947,0.234325,0.332828}+R4{0.473274,0.102912,0.329622,0.765199,0.149038,2.20931,0.0480657,7.69354}
+   3  TIM2+F+R3      2.5207  TIM2{3.24707,18.4329,28.7558}+F{0.253094,0.220778,0.141623,0.384505}+R3{0.753785,0.474175,0.224561,1.9003,0.0216542,9.96762}
+   4  K3Pu+F+ASC+R3  3.3620  K3Pu{10.0187,2.23282}+F{0.274685,0.234909,0.102193,0.388213}+ASC+R3{0.702374,0.459165,0.239023,1.3654,0.0586036,5.99167}
+   5  TVM+F+ASC+R2   2.1379  TVM{3.61563,19.3859,5.57327,4.56823}+F{0.276576,0.199786,0.113959,0.409679}+ASC+R2{0.795388,0.594274,0.204612,2.57718}
+   6  GTR+F+ASC+R5   2.1800  GTR{1.91187,7.24798,1.95568,2.96257,17.9178}+F{0.359032,0.146879,0.107577,0.386512}+ASC+R5{0.573931,0.039487,0.204475,0.726508,0.161557,2.14797,0.0464776,5.92293,0.0135598,15.2275}
+   7  SYM+ASC+R3     2.1040  SYM{1.16959,2.6845,3.54227,0.505932,4.74454}+FQ+ASC+R3{0.723775,0.541144,0.243348,1.76858,0.0328767,5.41272}
+   8  GTR+F+ASC+R4   1.0455  GTR{0.0001,3.49416,0.000219939,0.0001,0.0218123}+F{0.0228391,0.931483,0.0228391,0.0228391}+ASC+R4{0.256481,0.000808434,0.203538,0.000808434,0.215845,0.000808434,0.324136,3.08344}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -47707.1812 (s.e. 1002.7625)
+Unconstrained log-likelihood (without tree): -30416.9804
+Number of free parameters (#branches + #model parameters): 319
+Akaike information criterion (AIC) score: 96052.3624
+Corrected Akaike information criterion (AICc) score: 96089.5568
+Bayesian information criterion (BIC) score: 98179.1876
+
+Total tree length (sum of branch lengths): 2.5694
+Sum of internal branch lengths: 0.7647 (29.7604% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0002) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BULDOR001_Parasemia_plantaginis' is drawn at root
+
++--BULDOR001_Parasemia_plantaginis
+|
+|                              +--BMEN11RU2_Borearctia_menetriesi
+|                           +--|
+|                           |  |     +--PMAT11RUS_Pericallia_matronula
+|                           |  |  +--|
+|                           |  |  |  +---CNLEP113673_Platarctia_parthenos
+|                           |  +--|
+|                           |     |  +--AFLA14AUS_Arctia_flavia
+|                           |     +--|
+|                           |        +--AFLA11RUS_Arctia_flavia
+|                        +--|
+|                        |  |     +--KN00860_Acerbia_seitzi
+|                        |  |  +--|
+|                        |  |  |  +--KN00874_Arctia_rueckbeili
+|                        |  +**|
+|                        |     +--KN00869_Orontobia_secreta
+|                     +--|
+|                     |  |     +--CNLEP113677_Acerbia_alpina
+|                     |  |  +--|
+|                     |  |  |  +--MM23468_Acerbia_alpina
+|                     |  +--|
+|                     |     |     +--MM23469_Pararctia_lapponica
+|                     |     |  +--|
+|                     |     |  |  +--CNLEP113675_Pararctia_lapponica
+|                     |     +--|
+|                     |        |  +--CNLEP113676_Pararctia_subnebulosa
+|                     |        +--|
+|                     |           +--KN00865_Pararctia_tundrana
+|                  +--|
+|                  |  |           +--KN00871_Preparctia_romanovi
+|                  |  |        +--|
+|                  |  |        |  +--KN00870_Preparctia_mirifica
+|                  |  |     +--|
+|                  |  |     |  |  +--KN00872_Preparctia_buddenbrocki
+|                  |  |     |  +--|
+|                  |  |     |     +--KN00864_Sinoarctia_sieversi
+|                  |  |  +--|
+|                  |  |  |  +--KN00867_Platarctia_souliei
+|                  |  +--|
+|                  |     +--KN00863_Gonerda_perornata
+|               +--|
+|               |  +---MM23400_Oroncus_nr.alaica
+|            +--|
+|            |  +---CNLEP78241_Platyprepia_virginalis
+|         +--|
+|         |  |           +--CNLEP113664_Arctia_opulenta
+|         |  |        +--|
+|         |  |        |  +--CNLEP81969_Arctia_brachyptera
+|         |  |     +--|
+|         |  |     |  |  +--W15_Arctia_caja
+|         |  |     |  +--|
+|         |  |     |     +--KN00873_Arctia_martinhoneyi
+|         |  |  +--|
+|         |  |  |  +--ACAJ13RUS_Arctia_caja
+|         |  +--|
+|         |     |  +--AINT13TAJ_Arctia_intercalaris
+|         |     +--|
+|         |        +--KN00875_Arctia_thibetica
+|      +--|
+|      |  |                 +----MM08356_Rhyparia_purpurata
+|      |  |              +--|
+|      |  |              |  +-----NSGJZ014_Rhyparioides_amurensis
+|      |  |           +--|
+|      |  |           |  +----MM12598_Diacrisia_sannio
+|      |  |        +--|
+|      |  |        |  |                               +--RZ136_Callimorpha_dominula
+|      |  |        |  |                            +--|
+|      |  |        |  |                            |  +--CDOM14GE1_Callimorpha_dominula
+|      |  |        |  |                         +--|
+|      |  |        |  |                         |  +--CDOM14FIN_Callimorpha_dominula
+|      |  |        |  |                      +--|
+|      |  |        |  |                      |  |   +--NSGJZ003_Euplagia_quadripunctata
+|      |  |        |  |                      |  +---|
+|      |  |        |  |                      |      +--KN00905_Euplagia_splendidior
+|      |  |        |  |                   +--|
+|      |  |        |  |                   |  +---JMZI001_Haploa_reversa
+|      |  |        |  |                +--|
+|      |  |        |  |                |  +------CPUD13SPA_Cymbalophora_pudica
+|      |  |        |  |             +--|
+|      |  |        |  |             |  +---------NSGJZ017_Aglaomorpha_histrio
+|      |  |        |  |          +--|
+|      |  |        |  |          |  |  +-----------------MM05671_Coscinia_cribraria
+|      |  |        |  |          |  +--|
+|      |  |        |  |          |     +--------------DNA1252_Tyria_jacobaeae
+|      |  |        |  |       +--|
+|      |  |        |  |       |  |       +---------------------------------SIR14GEO_Setina_irrorella
+|      |  |        |  |       |  +-------|
+|      |  |        |  |       |          +---------------------------------AMSP13GE1_Amata_sp.
+|      |  |        |  |  +----|
+|      |  |        |  |  |    |                         +---------RZ387_Nyctemera_baulus
+|      |  |        |  |  |    |                   +-----|
+|      |  |        |  |  |    |                   |     +---------NSGJZ008_Nyctemera_adversata
+|      |  |        |  |  |    +-------------------|
+|      |  |        |  |  |                        +-----------NSGJZ021_Secusio_doriae
+|      |  |        |  +--|
+|      |  |        |     |        +---------------RZ30_Creatonotos_transiens
+|      |  |        |     |     +--|
+|      |  |        |     |     |  |        +---KN00881_Amurrhyparia_leopardinula
+|      |  |        |     |     |  |     +--|
+|      |  |        |     |     |  |     |  +--NSGJZ011_Phragmatobia_amuriensis
+|      |  |        |     |     |  |  +--|
+|      |  |        |     |     |  |  |  +-------CNLEP113666_Pyrrharctia_isabella
+|      |  |        |     |     |  +--|
+|      |  |        |     |     |     +--------NSGJZ009_Chionarctia_nivea
+|      |  |        |     |  +--|
+|      |  |        |     |  |  |             +----JZ000_Virbia_fragilis
+|      |  |        |     |  |  |         +---|
+|      |  |        |     |  |  |         |   +--KC11_Virbia_opella
+|      |  |        |     |  |  +---------|
+|      |  |        |     |  |            +----------KC33_Virbia_immaculata
+|      |  |        |     +--|
+|      |  |        |        |                 +-------OSCHLEINI14_Olepa_schleini
+|      |  |        |        |              +--|
+|      |  |        |        |              |  +--------KN00902_Nannoarctia_tripartita
+|      |  |        |        |           +--|
+|      |  |        |        |           |  +-------KN00900_Sinowatsonia_hoenei
+|      |  |        |        |        +--|
+|      |  |        |        |        |  |        +----T1_Estigmene_tenuistrigata
+|      |  |        |        |        |  +--------|
+|      |  |        |        |        |           +-------------M5_Spilosomina_sp
+|      |  |        |        |     +--|
+|      |  |        |        |     |  |                    +--MM07688_Diaphora_mendica
+|      |  |        |        |     |  |                 +--|
+|      |  |        |        |     |  |                 |  +--OZOR13SPA_Ocnogyna_zoraida
+|      |  |        |        |     |  |              +--|
+|      |  |        |        |     |  |              |  +----MM01038_Spilosoma_lubricipedum
+|      |  |        |        |     |  |           +--|
+|      |  |        |        |     |  |           |  +----TTAM15MOR_Spilosomina_sp
+|      |  |        |        |     |  |        +--|
+|      |  |        |        |     |  |        |  |   +----MM07409_Spilarctia_luteum
+|      |  |        |        |     |  |        |  +---|
+|      |  |        |        |     |  |        |      +--KN00899_Murzinarctia_x_album
+|      |  |        |        |     |  |     +--|
+|      |  |        |        |     |  |     |  |  +------CRUF15SPA_Canararctia_rufescens
+|      |  |        |        |     |  |     |  +--|
+|      |  |        |        |     |  |     |     |     +----SCDNA81_Spilosoma_virginica
+|      |  |        |        |     |  |     |     |  +--|
+|      |  |        |        |     |  |     |     |  |  +----W13_Estigmene_acrea
+|      |  |        |        |     |  |     |     +--|
+|      |  |        |        |     |  |     |        +----------W72_Hyphantria_cunea
+|      |  |        |        |     |  |  +--|
+|      |  |        |        |     |  |  |  +------KN00901_Eospilarctia_pauper
+|      |  |        |        |     |  +--|
+|      |  |        |        |     |     +-----ALAT15KK_Artimelia_latrellei
+|      |  |        |        |  +--|
+|      |  |        |        |  |  +----------CR055_Hypercompe_laeta
+|      |  |        |        +--|
+|      |  |        |           +----------SCDNA169_Arachnis_picta
+|      |  |     +--|
+|      |  |     |  |                    +**HPUE12SUE_Holoarctia_puengeleri
+|      |  |     |  |                 +--|
+|      |  |     |  |                 |  +--KN00878_Holoarctia_cervini
+|      |  |     |  |              +--|
+|      |  |     |  |              |  |  +--CNLEP113661_Neoarctia_beani
+|      |  |     |  |              |  +--|
+|      |  |     |  |              |     +--CNLEP113660_Neoarctia_brucei
+|      |  |     |  |           +--|
+|      |  |     |  |           |  |  +-----KN00877_Tancrea_pardalina
+|      |  |     |  |           |  +--|
+|      |  |     |  |           |     +-----KN00888_Centrarctia_mongolica
+|      |  |     |  |        +--|
+|      |  |     |  |        |  |  +--KN00898_Palearctia_hauensteini
+|      |  |     |  |        |  +--|
+|      |  |     |  |        |     +--KN00889_Palearctia_glaphyra
+|      |  |     |  |     +--|
+|      |  |     |  |     |  |   +--CARR13SPA_Chelis_arragonensis
+|      |  |     |  |     |  +---|
+|      |  |     |  |     |      |     +--CCAE11GRE_Chelis_caecilia
+|      |  |     |  |     |      |  +--|
+|      |  |     |  |     |      |  |  |  +--CDAH10RU1_Chelis_dahurica
+|      |  |     |  |     |      |  |  +--|
+|      |  |     |  |     |      |  |     +--CMAC10RUS_Chelis_maculosa
+|      |  |     |  |     |      +--|
+|      |  |     |  |     |         +--KN00904_Chelis_simplonica
+|      |  |     |  |  +--|
+|      |  |     |  |  |  +------KN00882_Hyperborea_czekanowskii
+|      |  |     |  +--|
+|      |  |     |     |     +**KN00885_Sibirarctia_kindermanni
+|      |  |     |     +-----|
+|      |  |     |           +--KN00887_Sibirarctia_buraetica
+|      |  |  +--|
+|      |  |  |  |                    +--CNLEP113665_Grammia_virguncula
+|      |  |  |  |                 +--|
+|      |  |  |  |                 |  +--SCDNA83_Apantesis_vittata
+|      |  |  |  |              +--|
+|      |  |  |  |              |  +--CNLEP113671_Grammia_parthenice
+|      |  |  |  |           +--|
+|      |  |  |  |           |  |  +--MM10596_Grammia_quenseli
+|      |  |  |  |           |  +--|
+|      |  |  |  |           |     +----CNLEP113678_Grammia_incorrupta
+|      |  |  |  |        +--|
+|      |  |  |  |        |  +--CNLEP113670_Grammia_williamsii
+|      |  |  |  |     +--|
+|      |  |  |  |     |  |  +-------CNLEP113672_Grammia_arge
+|      |  |  |  |     |  +--|
+|      |  |  |  |     |     |  +-----CNLEP113679_Notarctia_proxima
+|      |  |  |  |     |     +--|
+|      |  |  |  |     |        +------CNLEP113667_Apantesis_nais
+|      |  |  |  +-----|
+|      |  |  |        |  +**CNLEP113669_Holarctia_obliterata
+|      |  |  |        +--|
+|      |  |  |           +--KN00884_Grammia_obliterata
+|      |  +--|
+|      |     +------KN00880_Micrarctia_trigona
+|   +--|
+|   |  |        +--MM08779_Hyphoraia_aulica
+|   |  |     +--|
+|   |  |     |  +--HTES14ITA_Hyphoraia_testudinaria
+|   |  |  +--|
+|   |  |  |  +---HDEJ14SP2_Hyphoraia_dejeani
+|   |  +--|
+|   |     |     +--AVIKRUSK_Arctia_villica
+|   |     |  +--|
+|   |     |  |  +--AVIL12SPA_Arctia_villica
+|   |     +--|
+|   |        |   +--AUNG10MOR_Atlantarctia_ungemachi
+|   |        +---|
+|   |            +--KN00862_Arctia_tigrina
++---|
+|   |    +--AFES10RUS_Arctia_festiva
+|   +----|
+|        +--AFESIRAN_Arctia_festiva
+|
++--GEO13_2.2_Parasemia_plantaginis
+
+Tree in newick format:
+
+(BULDOR001_Parasemia_plantaginis:0.0035180506,((((((((((BMEN11RU2_Borearctia_menetriesi:0.0121732376,((PMAT11RUS_Pericallia_matronula:0.0102204499,CNLEP113673_Platarctia_parthenos:0.0138864466):0.0002250831,(AFLA14AUS_Arctia_flavia:0.0011318025,AFLA11RUS_Arctia_flavia:0.0005794853):0.0086160449):0.0008139303):0.0007058199,((KN00860_Acerbia_seitzi:0.0127464177,KN00874_Arctia_rueckbeili:0.0098716059):0.0007493947,KN00869_Orontobia_secreta:0.0085441125):0.0000022704):0.0006809570,((CNLEP113677_Acerbia_alpina:0.0034777471,MM23468_Acerbia_alpina:0.0020692080):0.0073567138,((MM23469_Pararctia_lapponica:0.0019847050,CNLEP113675_Pararctia_lapponica:0.0031085569):0.0021463378,(CNLEP113676_Pararctia_subnebulosa:0.0055705589,KN00865_Pararctia_tundrana:0.0039010284):0.0012560002):0.0054323281):0.0012047748):0.0006712095,((((KN00871_Preparctia_romanovi:0.0039375776,KN00870_Preparctia_mirifica:0.0054917011):0.0011308182,(KN00872_Preparctia_buddenbrocki:0.0034614766,KN00864_Sinoarctia_sieversi:0.0059887380):0.0031934714):0.0010817670,KN00867_Platarctia_souliei:0.0088380048):0.0009273624,KN00863_Gonerda_perornata:0.0097907744):0.0041363781):0.0012124364,MM23400_Oroncus_nr.alaica:0.0165673368):0.0015359372,CNLEP78241_Platyprepia_virginalis:0.0160259877):0.0018820762,((((CNLEP113664_Arctia_opulenta:0.0002725102,CNLEP81969_Arctia_brachyptera:0.0006048390):0.0019714845,(W15_Arctia_caja:0.0021526567,KN00873_Arctia_martinhoneyi:0.0087032278):0.0005502178):0.0012208589,ACAJ13RUS_Arctia_caja:0.0041548020):0.0049126212,(AINT13TAJ_Arctia_intercalaris:0.0074079087,KN00875_Arctia_thibetica:0.0115568858):0.0049518836):0.0105667189):0.0010508459,((((((MM08356_Rhyparia_purpurata:0.0182419583,NSGJZ014_Rhyparioides_amurensis:0.0231553819):0.0006325056,MM12598_Diacrisia_sannio:0.0168157060):0.0120494589,((((((((((RZ136_Callimorpha_dominula:0.0007699382,CDOM14GE1_Callimorpha_dominula:0.0006249137):0.0020726790,CDOM14FIN_Callimorpha_dominula:0.0032986672):0.0129289436,(NSGJZ003_Euplagia_quadripunctata:0.0026350441,KN00905_Euplagia_splendidior:0.0018936493):0.0148898608):0.0012847780,JMZI001_Haploa_reversa:0.0140847702):0.0043886296,CPUD13SPA_Cymbalophora_pudica:0.0233488999):0.0072240382,NSGJZ017_Aglaomorpha_histrio:0.0358347040):0.0074619368,(MM05671_Coscinia_cribraria:0.0605872561,DNA1252_Tyria_jacobaeae:0.0507878040):0.0107141408):0.0037959449,(SIR14GEO_Setina_irrorella:0.1144606139,AMSP13GE1_Amata_sp.:0.1130531682):0.0285625948):0.0125189843,((RZ387_Nyctemera_baulus:0.0343778751,NSGJZ008_Nyctemera_adversata:0.0351281197):0.0222645747,NSGJZ021_Secusio_doriae:0.0403060073):0.0683879749):0.0171346060,(((RZ30_Creatonotos_transiens:0.0539191695,(((KN00881_Amurrhyparia_leopardinula:0.0155796839,NSGJZ011_Phragmatobia_amuriensis:0.0125623165):0.0051011629,CNLEP113666_Pyrrharctia_isabella:0.0272156138):0.0110809872,NSGJZ009_Chionarctia_nivea:0.0310622557):0.0050873993):0.0077144442,((JZ000_Virbia_fragilis:0.0172200421,KC11_Virbia_opella:0.0125133981):0.0143234720,KC33_Virbia_immaculata:0.0375887561):0.0359292086):0.0037081767,((((((OSCHLEINI14_Olepa_schleini:0.0267538141,KN00902_Nannoarctia_tripartita:0.0315002007):0.0065642757,KN00900_Sinowatsonia_hoenei:0.0294429674):0.0025268314,(T1_Estigmene_tenuistrigata:0.0182144316,M5_Spilosomina_sp:0.0497070614):0.0298603204):0.0006116795,(((((((MM07688_Diaphora_mendica:0.0114884586,OZOR13SPA_Ocnogyna_zoraida:0.0118591128):0.0070941492,MM01038_Spilosoma_lubricipedum:0.0197431728):0.0041812788,TTAM15MOR_Spilosomina_sp:0.0186084020):0.0024007388,(MM07409_Spilarctia_luteum:0.0184787214,KN00899_Murzinarctia_x_album:0.0079038733):0.0165037245):0.0015800726,(CRUF15SPA_Canararctia_rufescens:0.0261307228,((SCDNA81_Spilosoma_virginica:0.0189455211,W13_Estigmene_acrea:0.0186591936):0.0027735895,W72_Hyphantria_cunea:0.0367181804):0.0113114687):0.0003825185):0.0009218002,KN00901_Eospilarctia_pauper:0.0240594468):0.0005985805,ALAT15KK_Artimelia_latrellei:0.0231961717):0.0013597873):0.0058381164,CR055_Hypercompe_laeta:0.0388428111):0.0070822007,SCDNA169_Arachnis_picta:0.0381807508):0.0009809019):0.0130824977):0.0027382944):0.0010103843,(((((((HPUE12SUE_Holoarctia_puengeleri:0.0000099200,KN00878_Holoarctia_cervini:0.0045166167):0.0084322410,(CNLEP113661_Neoarctia_beani:0.0042805085,CNLEP113660_Neoarctia_brucei:0.0026701206):0.0123595191):0.0010259732,(KN00877_Tancrea_pardalina:0.0205571948,KN00888_Centrarctia_mongolica:0.0212132286):0.0125363609):0.0003804848,(KN00898_Palearctia_hauensteini:0.0084373403,KN00889_Palearctia_glaphyra:0.0099537650):0.0055717506):0.0055233594,(CARR13SPA_Chelis_arragonensis:0.0058873055,((CCAE11GRE_Chelis_caecilia:0.0050790637,(CDAH10RU1_Chelis_dahurica:0.0019269996,CMAC10RUS_Chelis_maculosa:0.0028307001):0.0064879944):0.0009741733,KN00904_Chelis_simplonica:0.0105575745):0.0018474863):0.0136585858):0.0016795172,KN00882_Hyperborea_czekanowskii:0.0254911034):0.0022222157,(KN00885_Sibirarctia_kindermanni:0.0000022052,KN00887_Sibirarctia_buraetica:0.0016556267):0.0230614149):0.0103858082):0.0012556744,((((((CNLEP113665_Grammia_virguncula:0.0007510346,SCDNA83_Apantesis_vittata:0.0032931094):0.0052622664,CNLEP113671_Grammia_parthenice:0.0080899454):0.0022999208,(MM10596_Grammia_quenseli:0.0097864380,CNLEP113678_Grammia_incorrupta:0.0194950675):0.0042762187):0.0040312254,CNLEP113670_Grammia_williamsii:0.0066732152):0.0077911035,(CNLEP113672_Grammia_arge:0.0270107999,(CNLEP113679_Notarctia_proxima:0.0223578131,CNLEP113667_Apantesis_nais:0.0263815644):0.0075674685):0.0006684299):0.0028891840,(CNLEP113669_Holarctia_obliterata:0.0000024348,KN00884_Grammia_obliterata:0.0083927361):0.0124821132):0.0221816763):0.0014153205,KN00880_Micrarctia_trigona:0.0238107466):0.0028160774):0.0015013833,(((MM08779_Hyphoraia_aulica:0.0040084070,HTES14ITA_Hyphoraia_testudinaria:0.0054207263):0.0075691337,HDEJ14SP2_Hyphoraia_dejeani:0.0153233060):0.0109027227,((AVIKRUSK_Arctia_villica:0.0055438749,AVIL12SPA_Arctia_villica:0.0043585433):0.0121532383,(AUNG10MOR_Atlantarctia_ungemachi:0.0051362218,KN00862_Arctia_tigrina:0.0066587225):0.0152632100):0.0005950780):0.0026640734):0.0014392652,(AFES10RUS_Arctia_festiva:0.0038830343,AFESIRAN_Arctia_festiva:0.0069133674):0.0184278169):0.0142119758,GEO13_2.2_Parasemia_plantaginis:0.0031248501);
+
+TIME STAMP
+----------
+
+Date and time: Tue Jan 30 00:55:11 2024
+Total CPU time used: 479.828 seconds (0h:7m:59s)
+Total wall-clock time used: 62.2372 seconds (0h:1m:2s)
+
