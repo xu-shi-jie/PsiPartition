@@ -17,24 +17,10 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument("-f", "--filex", help="File")
 parser.add_argument("-p", "--part", help="par file")
-parser.add_argument("-o", "--output", help="output")
 args = parser.parse_args()
-
-
-output = "output"
-if args.output:
-	output = args.output
-if(not os.path.isdir(output)):
-	os.system("mkdir "+output)
-	
-
 
 parFile = args.part
 filex = args.filex
-
-fileName = filex
-if "/" in filex:
-	fileName = filex.split("/")[len(filex.split("/"))-1]
 
 def line_prepender(filename, line):
 	with open(filename, 'r+') as f:
@@ -47,11 +33,15 @@ parF = open(parFile,"r")
 for line in parF:
 	if "=" in line:
 		siteArr = line.split("=")[1].strip().replace(";","").replace(",","")
-		parname = line.split("=")[0].strip()
+		#parname = line.split("=")[0].strip()
+		parname = line.split("=")[0].strip("\tcharset ")
+
+		parname.replace(" ","")
 		siteList = siteArr.split(" ")
-		if os.path.isfile(output+"/"+fileName+str(parname)):
-			os.system("rm "+output+"/"+fileName+str(parname))
-		par = open(output+"/"+fileName+str(parname),"w")
+		if os.path.isfile(filex+str(parname)):
+			os.system("rm "+filex+str(parname))
+		# par = open(filex+str(parname),"w")
+		par = open(parFile.replace("F1_Par_", "").replace(".phy", ".phy"+str(parname)), "w")
 		fil = open(filex,"r")
 		noOfTax = 0
 		for lx in fil:
@@ -73,5 +63,6 @@ for line in parF:
 			noOfTax += 1
 		fil.close()
 		par.close()
-		line_prepender(output+"/"+fileName+str(parname), str(noOfTax-1)+" "+str(len(siteList)))
+		# line_prepender(filex+str(parname), str(noOfTax-1)+" "+str(len(siteList)))
+		line_prepender(parFile.replace("F1_Par_", "").replace(".phy", ".phy"+str(parname)), str(noOfTax-1) +" "+str(len(siteList)))
 parF.close()
