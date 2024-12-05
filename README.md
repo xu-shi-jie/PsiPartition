@@ -1,7 +1,7 @@
 # PsiPartition
 ![](logo.png)
 
-This is the official implementation of the paper "PsiPartition: Improved Site Partitioning for Genomic Data by Parameterized Sorting Indices and Bayesian Optimization" [Biorxiv](https://www.biorxiv.org/cgi/content/short/2024.04.03.588030v1).
+This is the official implementation of the paper "PsiPartition: Improved Site Partitioning for Genomic Data by Parameterized Sorting Indices and Bayesian Optimization" [Journal of Molecular Evolution](https://link.springer.com/article/10.1007/s00239-024-10215-7).
 
 ## Installation
 
