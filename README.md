@@ -12,6 +12,8 @@ pip install -r requirements.txt
 ```
 
 To enable the Bayesian optimization, you need to register an account on [Weights & Biases](https://wandb.ai/).
+
+PsiPartition was tested with the version of IQ-TREE 1.6.12. Please download [IQ-TREE](https://github.com/Cibiv/IQ-TREE/releases/tag/v1.6.12) and decompress it. Make sure PsiPartition can find `iqtree` binary on the path `./ThirdParty/iqtree-1.6.12-Linux/bin/iqtree`. 
 ## Usage
 
 ```bash

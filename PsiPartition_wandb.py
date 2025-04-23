@@ -1,5 +1,5 @@
 """
-A script to evaluate the sorting partitioning method.
+A script to evaluate the psipartition method.
 @Author: Shijie Xu
 @Date: 2024-01-02
 """
